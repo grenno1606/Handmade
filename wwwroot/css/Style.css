@@ -1473,7 +1473,7 @@ header .help span {
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   position: relative;
-  width: 20%;
+  width: calc(100% / 5 - 1.3rem);
   padding: 10px;
 }
 

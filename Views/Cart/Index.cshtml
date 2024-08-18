@@ -33,15 +33,15 @@
               <div class="pr"><img src="@product.Image" alt="image" /></div>
               <div class="na">@product.ProductName</div>
               <div class="pri">
-                <span>&#8363;@product.OriginalPrice</span>
-                &#8363;@product.DiscountedPrice
+                <span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
+                &#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))
               </div>
               <div class="num">
                 <button class="dec">-</button>
                 <input class="cen" type="text" value="@product.Amount" />
                 <button class="in">+</button>
               </div>
-              <div class="mon">&#8363;@(product.DiscountedPrice * product.Amount)</div>
+              <div class="mon">&#8363;@((product.DiscountedPrice * product.Amount).ToString("#,##0", new System.Globalization.CultureInfo("vi-VN")))</div>
               <div class="ope">
                 <form action="">
                   <button type="submit">Xoá</button>
@@ -60,7 +60,7 @@
         <div class="se">Chọn tất cả</div>
         <div class="del">Xoá</div>
         <div class="save">Lưu vào mục yêu thích</div>
-        <div class="num">Tổng thanh toán: &#8363;@total</div>
+        <div class="num">Tổng thanh toán: &#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</div>
         <form asp-area="" asp-controller="Checkout" asp-action="Index">
           <button type="submit">Mua hàng</button>
         </form>
@@ -91,7 +91,7 @@
                 <div class="content">
                   <h3>@product.ProductName</h3>
                   <div class="price">
-                    &#8363;@product.DiscountedPrice<span>&#8363;@product.OriginalPrice</span>
+                    &#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))<span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
                   </div>
                 </div>
               </div>

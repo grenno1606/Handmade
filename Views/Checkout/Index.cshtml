@@ -16,7 +16,7 @@
                 </div>
                 <div class="item__detail">
                   <p class="item__name">@product.ProductName</p>
-                  <p class="item__price">&#8363;@product.DiscountedPrice</p>
+                  <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</p>
                   <p>x @product.Amount</p>
                 </div>
               </li>
@@ -33,7 +33,7 @@
                 total+=product.DiscountedPrice * product.Amount;
                 }
             }
-            <span class="left__price">&#8363;@total</span>
+            <span class="left__price">&#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
           </div>
           <div class="left__total">
             <span>Phí vận chuyển</span>
@@ -42,7 +42,7 @@
           <div class="line"><hr /></div>
           <div class="left__total">
             <span>Tổng thanh toán</span>
-            <span class="left__total-price">&#8363;@(total+30000)</span>
+            <span class="left__total-price">&#8363;@((total+30000).ToString("#,##0", new System.Globalization.CultureInfo("vi-VN")))</span>
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@
               </div>
               <div class="content">
                 <h3>@product.ProductName</h3>
-                <div class="price">&#8363;@product.DiscountedPrice <span>&#8363;@product.OriginalPrice</span></div>
+                <div class="price">&#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN")) <span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span></div>
               </div>
             </div>
           </div>
