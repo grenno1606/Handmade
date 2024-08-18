@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Checkout Page";
+}
+
+ <main class="checkout-container">
+      <div class="box box-left">
+        <h3>Đơn hàng</h3>
+        <div class="line"><hr /></div>
+        <ul class="left__list">
+          <li class="left__item">
+            <div class="item__image">
+              <img src="./Uploads/sp1a.jpg" alt="image" />
+            </div>
+            <div class="item__detail">
+              <p class="item__name">dfd dfdf ddf</p>
+              <p class="item__price">&#8363;3244</p>
+            </div>
+          </li>
+          <li class="left__item">
+            <div class="item__image">
+              <img src="./Uploads/sp1a.jpg" alt="image" />
+            </div>
+            <div class="item__detail">
+              <p class="item__name">dfd dfdf ddf</p>
+              <p class="item__price">&#8363;3244</p>
+            </div>
+          </li>
+          <li class="left__item">
+            <div class="item__image">
+              <img src="./Uploads/sp1a.jpg" alt="image" />
+            </div>
+            <div class="item__detail">
+              <p class="item__name">dfd dfdf ddf</p>
+              <p class="item__price">&#8363;3244</p>
+            </div>
+          </li>
+        </ul>
+        <div class="left__header">
+          <div class="line"><hr /></div>
+          <div class="left__total">
+            <span>Tạm tính</span>
+            <span class="left__price">&#8363;43434</span>
+          </div>
+          <div class="left__total">
+            <span>Phí vận chuyển</span>
+            <span class="left__price">&#8363;30.000</span>
+          </div>
+          <div class="line"><hr /></div>
+          <div class="left__total">
+            <span>Tổng thanh toán</span>
+            <span class="left__total-price">&#8363;34343</span>
+          </div>
+        </div>
+      </div>
+      <div class="box box-right">
+        <form action="/OrderSuccessView.html" method="">
+          <h3>Thông tin mua hàng</h3>
+          <div class="form__item">
+            <label for="">Email</label>
+            <input type="text" />
+          </div>
+          <div class="form__item">
+            <label for="">Họ và tên</label>
+            <input type="text" />
+          </div>
+          <div class="form__item">
+            <label for="">Số điện thoại</label>
+            <input type="text" />
+          </div>
+          <div class="form__item">
+            <label for="">Địa chỉ</label>
+            <input type="text" />
+          </div>
+          <button type="submit" class="form__submit pay-btn">Đặt hàng</button>
+        </form>
+      </div>
+    </main>

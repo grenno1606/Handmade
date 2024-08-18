@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Tutorial Page";
+}
+
+ <section class="tutorial" id="tutorial">
+      <h1 class="headings">Hướng Dẫn Làm <span> Sản Phẩm Handmade</span></h1>
+
+      <div class="sear">
+        <form class="tk" action="action_page.php">
+          <input type="text" placeholder="Tìm kiếm..." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div class="video-container box-wrapper">
+        @{
+          foreach (var tutorial in ViewBag.Tutorials)
+          {
+          <div class="box-item">
+          <div class="row">
+            <video controls src="@tutorial.Video" muted></video>
+
+            <div class="content">
+              <h3>@tutorial.TutorialName</h3>
+              <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
+            </div>
+          </div>
+        </div>
+        }
+        }
+      </div>
+
+      <div class="page">
+        <a href="#" class="btu"><</a>
+        <a href="#" class="btuc">1</a>
+        <a href="#" class="btu">2</a>
+        <a href="#" class="btu">3</a>
+        <a href="#" class="btu">></a>
+      </div>
+    </section>

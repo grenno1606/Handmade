@@ -1,0 +1,300 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="home" id="home">
+      <div class="content">
+        <h3>Handmade</h3>
+        <span>Độc đáo - Sáng tạo - Tinh tế</span>
+        <p>
+          Mang sự ấm áp và dịu dàng tới mọi góc nhỏ của cuộc sống! <br />
+          Khám phá ngay các sản phẩm và trải nghiệm sự thú vị của việc tự tay
+          làm đồ Handmade cùng với chúng tôi.
+        </p>
+        <a class="btn" asp-area="" asp-controller="Login" asp-action="Index">Khám phá ngay</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading"><span> Giới Thiệu </span> Chúng Tôi</h1>
+
+      <div class="row">
+        <div class="video-container">
+          <video src="~/Uploads/vd.mp4" loop autoplay muted></video>
+          <h3>Nền Tảng Đáng Tin Cậy</h3>
+        </div>
+
+        <div class="content">
+          <h3>Tại sao nên chọn chúng tôi?</h3>
+          <p>
+            Sản phẩm độc đáo: Chúng tôi cung cấp các sản phẩm thủ công độc đáo
+            và đa dạng, được làm bằng tay bởi các nghệ nhân tài năng và đam mê.
+            Tất cả các sản phẩm đều được thiết kế với tinh thần sáng tạo và tinh
+            tế để giúp bạn tạo nên một không gian sống tươi đẹp và độc đáo.
+          </p>
+          <p>
+            Hướng dẫn làm đồ handmade chi tiết: Ngoài việc cung cấp các sản phẩm
+            thủ công, chúng tôi còn cung cấp các hướng dẫn làm đồ handmade chi
+            tiết và dễ hiểu giúp bạn tự tay làm các sản phẩm độc đáo và ấn
+            tượng.
+          </p>
+          <p>
+            Dịch vụ khách hàng chuyên nghiệp: Chúng tôi cam kết đầu tư vào dịch
+            vụ khách hàng chuyên nghiệp và tận tụy, luôn sẵn sàng hỗ trợ và giải
+            đáp mọi thắc mắc của khách hàng.
+          </p>
+          <a href="#" class="btn">Tìm hiểu thêm</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="icons-container">
+      <div class="icons">
+        <img src="~/Uploads/ic1.jpg" alt="" />
+        <div class="info">
+          <h3>Miễn phí vận chuyển</h3>
+          <span>Tất cả các đơn đặt hàng</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="~/Uploads/ic2.jpg" alt="" />
+        <div class="info">
+          <h3>10 ngày đổi trả</h3>
+          <span>Đảm bảo hoàn tiền</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="~/Uploads/ic3.jpg" alt="" />
+        <div class="info">
+          <h3>Ưu đãi & quà tặng</h3>
+          <span>Tất cả các đơn đặt hàng</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="~/Uploads/ic4.jpg" alt="" />
+        <div class="info">
+          <h3>Thanh toán an toàn</h3>
+          <span>Được bảo vệ bởi Momo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading">Sản Phẩm <span>Mới Nhất</span></h1>
+
+      <div class="box-container">
+        @{
+        int count=0;
+        foreach (var product in ViewBag.Products)
+        {
+          if (count>11) break;
+          <div class="box">
+            <span class="discount">-@product.DiscountPercentage%</span>
+            <div class="image">
+              <img src="@product.Image" alt="image" />
+              <div class="icons">
+                <form class="cart-btn1" action="" method="post">
+                  <button type="submit"><i class="fas fa-heart"></i></button>
+                </form>
+                <form action="" method="post" class="form-ac">
+                  <button class="form-ac" type="submit">Thêm vào giỏ</button>
+                </form>
+                <form class="cart-btn1" action="#">
+                  <button type="submit"><i class="fas fa-share"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="content">
+              <h3>@product.ProductName</h3>
+              <div class="price">&#8363;@product.DiscountedPrice<span>&#8363;@product.OriginalPrice</span></div>
+            </div>
+          </div>
+          count++;
+        }
+        }
+      </div>
+
+      <a class="bt" asp-area="" asp-controller="Product" asp-action="Index">Xem tất cả các sản phẩm</a>
+    </section>
+
+    <section class="tutorial" id="tutorial">
+      <h1 class="heading">Hướng Dẫn Làm <span> Sản Phẩm Handmade</span></h1>
+
+      <div class="video-container">
+        @{
+          int countt=0;
+          foreach (var tutorial in ViewBag.Tutorials)
+          {
+            if (countt>7) break;
+            <div class="row">
+              <video controls src="@tutorial.Video" muted></video>
+
+              <div class="content">
+                <h3>@tutorial.TutorialName</h3>
+                <a href="#" class="btt"><i class="fa-solid fa-heart"></i></a>
+              </div>
+            </div>
+            countt++;
+          }
+        }
+      </div>
+
+      <a class="bt" asp-area="" asp-controller="Tutorial" asp-action="Index">Xem tất cả các hướng dẫn</a>
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading">Đánh Giá Của <span> Khách Hàng</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Tôi thực sự rất thích trang web này, tôi đã tìm thấy rất nhiều
+              hướng dẫn để tạo ra những đồ trang trí xinh xắn. Tuy nhiên, tôi
+              muốn trang web có thêm nhiều hướng dẫn về các sản phẩm khác nữa.
+            </p>
+            <div class="user">
+              <img src="~/Uploads/kh1.jpg" alt="" />
+              <div class="user-info">
+                <h3>Thuỳ Trâm</h3>
+                <span>Khách hàng hài lòng</span>
+              </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Trang web có một nền tảng bán hàng rất tốt để bạn có thể đặt mua
+              các sản phẩm. Tôi đã mua một số bộ trang trí thủ công khác nhau và
+              tất cả đều được đóng gói rất cẩn thận và gửi đến nhanh chóng.
+            </p>
+            <div class="user">
+              <img src="~/Uploads/kh2.jpg" alt="" />
+              <div class="user-info">
+                <h3>Tố Uyên</h3>
+                <span>Khách hàng hài lòng</span>
+              </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Tôi đã tìm thấy nhiều ý tưởng tuyệt vời để tạo ra các sản phẩm
+              handmade từ trang web. Hướng dẫn rất dễ hiểu và tất cả những gì
+              cần làm để tạo ra các sản phẩm đều được liệt kê rõ ràng.
+            </p>
+            <div class="user">
+              <img src="~/Uploads/kh3.jpg" alt="" />
+              <div class="user-info">
+                <h3>Ngọc Trí</h3>
+                <span>Khách hàng hài lòng</span>
+              </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Tôi đã thử nhiều trang web khác nhau để tìm nơi mua sản phẩm
+              handmade, nhưng trang web này là tốt nhất. Sản phẩm của họ độc đáo
+              và chất lượng, còn giá cả rất hợp lý. Tôi cũng thích những hướng
+              dẫn chi tiết của họ.
+            </p>
+            <div class="user">
+              <img src="~/Uploads/kh4.jpg" alt="" />
+              <div class="user-info">
+                <h3>Thị Hà</h3>
+                <span>Khách hàng hài lòng</span>
+              </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Trang web này rất dễ sử dụng và có nhiều lựa chọn sản phẩm chất
+              lượng. Tôi đã mua rất nhiều sản phẩm từ đây và tôi không bao giờ
+              bị thất vọng. Tôi cũng rất đánh giá cao dịch vụ giao hàng nhanh
+              chóng của họ.
+            </p>
+            <div class="user">
+              <img src="~/Uploads/kh5.jpg" alt="" />
+              <div class="user-info">
+                <h3>Văn Cừ</h3>
+                <span>Khách hàng hài lòng</span>
+              </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span> Liên Hệ </span> Chúng Tôi</h1>
+
+      <div class="row">
+        <form action="">
+          <input type="text" placeholder="Tên" class="box" />
+          <input type="email" placeholder="Email" class="box" />
+          <input type="number" placeholder="Số điện thoại" class="box" />
+          <textarea
+            name=""
+            class="box"
+            placeholder="Lời nhắn"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Gửi phản hồi" class="btn" />
+        </form>
+
+        <div class="image">
+          <img src="~/Uploads/ct.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

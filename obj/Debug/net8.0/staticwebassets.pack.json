@@ -1,0 +1,445 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\bg.png",
+      "PackagePath": "staticwebassets\\Uploads\\bg.png"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\ct.png",
+      "PackagePath": "staticwebassets\\Uploads\\ct.png"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\ic1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic1.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\ic2.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic2.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\ic3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic3.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\ic4.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic4.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\kh1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh1.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\kh2.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh2.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\kh3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh3.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\kh4.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh4.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\kh5.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh5.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp1a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1a.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp1b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1b.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp1c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1c.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp1d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1d.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp1e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1e.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp1f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1f.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp2a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2a.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp2b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2b.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp2c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2c.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp2d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2d.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp2e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2e.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp2f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2f.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp3a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3a.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp3b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3b.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp3c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3c.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp3d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3d.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp3e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3e.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp3f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3f.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp4a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4a.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp4b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4b.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp4c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4c.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp4d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4d.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp4e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4e.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\sp4f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4f.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\tt.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\tt.jpg"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd1.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd1.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd2.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd2.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd3.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd3.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd4.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd4.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd5.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd5.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd6.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd6.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd7.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd7.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\Uploads\\vd8.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd8.mp4"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\css\\Style.css",
+      "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Handmade_Dotnet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Handmade_Dotnet.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Handmade_Dotnet.props",
+      "PackagePath": "build\\Handmade_Dotnet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Handmade_Dotnet.props",
+      "PackagePath": "buildMultiTargeting\\Handmade_Dotnet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Handmade_Dotnet.props",
+      "PackagePath": "buildTransitive\\Handmade_Dotnet.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
