@@ -56,7 +56,7 @@
       }
 
       <div class="tu2">
-        <div class="cb"><input type="checkbox" /></div>
+        <div class="cb"><input type="checkbox"/></div>
         <div class="se">Chọn tất cả</div>
         <div class="del">Xoá</div>
         <div class="save">Lưu vào mục yêu thích</div>
@@ -68,109 +68,70 @@
 
       <div class="may">
         <div>CÓ THỂ BẠN CŨNG THÍCH</div>
-        <a href="">Xem tất cả ></a>
+        <a asp-area="" asp-controller="Product" asp-action="Index">Xem tất cả ></a>
       </div>
 
       <div class="tu3">
-        <div class="box">
-          <span class="discount">-45%</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="iconss">
-              <a href="#" class="fas fa-heart"></a>
-              <form action="">
-                <button class="cart-btn" type="submit">Thêm vào giỏ</button>
-              </form>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>fdd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;232323
-              <span>&#8363;232323</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <span class="discount">-45%</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="iconss">
-              <a href="#" class="fas fa-heart"></a>
-              <form action="">
-                <button class="cart-btn" type="submit">Thêm vào giỏ</button>
-              </form>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>fdd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;232323
-              <span>&#8363;232323</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <span class="discount">-45%</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="iconss">
-              <a href="#" class="fas fa-heart"></a>
-              <form action="">
-                <button class="cart-btn" type="submit">Thêm vào giỏ</button>
-              </form>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>fdd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;232323
-              <span>&#8363;232323</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <span class="discount">-45%</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="iconss">
-              <a href="#" class="fas fa-heart"></a>
-              <form action="">
-                <button class="cart-btn" type="submit">Thêm vào giỏ</button>
-              </form>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>fdd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;232323
-              <span>&#8363;232323</span>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <span class="discount">-45%</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="iconss">
-              <a href="#" class="fas fa-heart"></a>
-              <form action="">
-                <button class="cart-btn" type="submit">Thêm vào giỏ</button>
-              </form>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>fdd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;232323
-              <span>&#8363;232323</span>
-            </div>
-          </div>
-        </div>
+        @{
+          int count=0;
+          foreach (var product in ViewBag.products){
+            if (count>4) break;
+              <div class="box">
+                <span class="discount">-@product.DiscountPercentage%</span>
+                <div class="image">
+                  <img src="@product.Image" alt="image" />
+                  <div class="iconss">
+                    <a href="#" class="fas fa-heart"></a>
+                    <form action="">
+                      <button class="cart-btn" type="submit">Thêm vào giỏ</button>
+                    </form>
+                    <a href="#" class="fas fa-share"></a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>@product.ProductName</h3>
+                  <div class="price">
+                    &#8363;@product.DiscountedPrice<span>&#8363;@product.OriginalPrice</span>
+                  </div>
+                </div>
+              </div>
+          count++;
+          }
+        }
       </div>
     </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.tu1').forEach(function (productElement) {
+            var decButton = productElement.querySelector('.dec');
+            var inButton = productElement.querySelector('.in');
+            var quantityInput = productElement.querySelector('.cen');
+
+            decButton.addEventListener('click', function () {
+                var currentValue = parseInt(quantityInput.value, 10);
+                if (currentValue > 1) {
+                    quantityInput.value = currentValue - 1;
+                    updateTotalPrice(productElement);
+                }
+            });
+
+            inButton.addEventListener('click', function () {
+                var currentValue = parseInt(quantityInput.value, 10);
+                quantityInput.value = currentValue + 1;
+                updateTotalPrice(productElement);
+            });
+        });
+    });
+
+   function updateTotalPrice(productElement) {
+    var quantity = parseInt(productElement.querySelector('.cen').value, 10);
+
+    var discountedPriceText = productElement.querySelector('.pri').childNodes[2].textContent.trim();
+    var discountedPrice = parseFloat(discountedPriceText.replace(/[^0-9.-]+/g, ""));
+
+    var totalPrice = discountedPrice * quantity;
+
+    productElement.querySelector('.mon').innerHTML = `&#8363;${totalPrice.toLocaleString()}`;
+}
+</script>
