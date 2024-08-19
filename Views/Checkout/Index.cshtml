@@ -7,39 +7,33 @@
         <h3>Đơn hàng</h3>
         <div class="line"><hr /></div>
         <ul class="left__list">
-          <li class="left__item">
-            <div class="item__image">
-              <img src="./Uploads/sp1a.jpg" alt="image" />
-            </div>
-            <div class="item__detail">
-              <p class="item__name">dfd dfdf ddf</p>
-              <p class="item__price">&#8363;3244</p>
-            </div>
-          </li>
-          <li class="left__item">
-            <div class="item__image">
-              <img src="./Uploads/sp1a.jpg" alt="image" />
-            </div>
-            <div class="item__detail">
-              <p class="item__name">dfd dfdf ddf</p>
-              <p class="item__price">&#8363;3244</p>
-            </div>
-          </li>
-          <li class="left__item">
-            <div class="item__image">
-              <img src="./Uploads/sp1a.jpg" alt="image" />
-            </div>
-            <div class="item__detail">
-              <p class="item__name">dfd dfdf ddf</p>
-              <p class="item__price">&#8363;3244</p>
-            </div>
-          </li>
+          @{
+            if (ViewBag.cartProducts!=null){
+            foreach (var product in ViewBag.cartProducts){
+              <li class="left__item">
+                <div class="item__image">
+                  <img src="@product.Image" alt="image" />
+                </div>
+                <div class="item__detail">
+                  <p class="item__name">@product.ProductName</p>
+                  <p class="item__price">&#8363;@product.DiscountedPrice</p>
+                  <p>x @product.Amount</p>
+                </div>
+              </li>
+            }
+            }
+          }
         </ul>
         <div class="left__header">
           <div class="line"><hr /></div>
           <div class="left__total">
             <span>Tạm tính</span>
-            <span class="left__price">&#8363;43434</span>
+            @{int total=0;
+              foreach (var product in ViewBag.cartProducts){
+                total+=product.DiscountedPrice * product.Amount;
+                }
+            }
+            <span class="left__price">&#8363;@total</span>
           </div>
           <div class="left__total">
             <span>Phí vận chuyển</span>
@@ -48,12 +42,12 @@
           <div class="line"><hr /></div>
           <div class="left__total">
             <span>Tổng thanh toán</span>
-            <span class="left__total-price">&#8363;34343</span>
+            <span class="left__total-price">&#8363;@(total+30000)</span>
           </div>
         </div>
       </div>
       <div class="box box-right">
-        <form action="/OrderSuccessView.html" method="">
+        <form asp-area="" asp-controller="OrderSuccess" asp-action="Index">
           <h3>Thông tin mua hàng</h3>
           <div class="form__item">
             <label for="">Email</label>

@@ -16,19 +16,19 @@ public class FavoriteTutorialsService
         database.CloseConnection();
         return favoriteTutorials;
     }
-
-    public FavoriteTutorialModel? GetById(int id)
+     public List<TutorialModel> GetByUsername(String username)
     {
+        List<TutorialModel> tutorials = new List<TutorialModel>();
         Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM favoritetutorials WHERE favoriteid = @id");
-        command.Parameters.AddWithValue("@id", id);
+        var command = database.CreateCommand("SELECT t.* FROM tutorials t JOIN favoritetutorials ft ON t.tutorialid = ft.tutorialid  WHERE ft.username=@username;");
+        command.Parameters.AddWithValue("@username", username);
         var reader = command.ExecuteReader();
-        if (reader.Read())
+        while (reader.Read())
         {
-            return FavoriteTutorialModel.FromDatabase(reader);
+            tutorials.Add(TutorialModel.FromDatabase(reader));
         }
         database.CloseConnection();
-        return null;
+        return tutorials;
     }
 
     public void Add(FavoriteTutorialModel favoriteTutorial)

@@ -17,32 +17,20 @@ public class FavoriteProductsService
         return favoriteProducts;
     }
 
-    public FavoriteProductModel? GetById(int id)
+    public List<ProductModel> GetByUsername(String username)
     {
+        List<ProductModel> products = new List<ProductModel>();
         Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM favoriteproducts WHERE favoriteid = @id");
-        command.Parameters.AddWithValue("@id", id);
-        var reader = command.ExecuteReader();
-        if (reader.Read())
-        {
-            return FavoriteProductModel.FromDatabase(reader);
-        }
-        database.CloseConnection();
-        return null;
-    }
-
-    public FavoriteProductModel? GetByUsername(String username)
-    {
-        Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM favoriteproducts WHERE username = @username");
+        var command = database.CreateCommand("SELECT p.* FROM products p JOIN favoriteproducts fp ON p.productid = fp.productid WHERE fp.username=@username;");
+        // var command = database.CreateCommand("SELECT * FROM products");
         command.Parameters.AddWithValue("@username", username);
         var reader = command.ExecuteReader();
-        if (reader.Read())
+        while (reader.Read())
         {
-            return FavoriteProductModel.FromDatabase(reader);
+            products.Add(ProductModel.FromDatabase(reader));
         }
         database.CloseConnection();
-        return null;
+        return products;
     }
 
     public void Add(FavoriteProductModel favoriteProduct)

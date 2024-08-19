@@ -17,6 +17,27 @@ public class UserCartService
         return userCarts;
     }
 
+    public List<ProductModel> GetByUsername(String username)
+    {
+        List<ProductModel> products = new List<ProductModel>();
+        Database database = new Database();
+        var command = database.CreateCommand("SELECT p.* FROM products p JOIN usercart uc ON p.productid = uc.productid WHERE uc.username=@username;");
+        command.Parameters.AddWithValue("@username", username);
+        var reader = command.ExecuteReader();
+        while (reader.Read())
+        {
+            products.Add(ProductModel.FromDatabase(reader));
+        }
+        database.CloseConnection();
+        return products;
+    }
+
+    public void SetAmount(int Amount){
+        Database database = new Database();
+        var command = database.CreateCommand("UPDATE products p JOIN userCart uc ON p.productId = uc.productId SET p.amount = uc.quantity");
+        command.ExecuteNonQuery();
+        database.CloseConnection();
+    }
     public UserCartModel? GetById(int id)
     {
         Database database = new Database();

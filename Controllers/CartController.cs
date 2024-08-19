@@ -6,9 +6,15 @@ namespace Handmade_Dotnet.Controllers;
 
 public class CartController : Controller
 {
-
+    public ProductService productService=new ProductService();
+    public UserCartService userCartService=new UserCartService();
     public IActionResult Index()
     {
+        List<ProductModel> cartProducts = userCartService.GetByUsername("Dunn"); //---------------------------
+        ViewBag.cartProducts = cartProducts;
+        List<ProductModel> products = productService.GetAll();
+        ViewBag.products = products;
+        // userCartService.SetAmount();-------------------------------------------------
         return View();
     }
 

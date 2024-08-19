@@ -12,10 +12,14 @@ public class HeartController : Controller
     public FavoriteTutorialsService favoriteTutorialsService= new FavoriteTutorialsService();
     public IActionResult Index()
     {
-        
-        // List<ProductModel> products = productService.GetAll();
-
-
+        List<ProductModel> favoriteProducts=favoriteProductsService.GetByUsername("Dunn");//-----------------
+        ViewBag.favoriteProducts = favoriteProducts;
+        List<ProductModel> products = productService.GetAll();
+        ViewBag.products = products;
+        List<TutorialModel> favoriteTutorials=favoriteTutorialsService.GetByUsername("Dunn");
+        ViewBag.favoriteTutorials = favoriteTutorials;
+        List<TutorialModel> tutorials = tutorialService.GetAll();
+        ViewBag.tutorials = tutorials;
         return View();
     }
 

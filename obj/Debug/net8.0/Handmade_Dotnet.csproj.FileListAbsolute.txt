@@ -29,3 +29,4 @@ D:\Handmade_Dotnet\obj\Debug\net8.0\ref\Handmade_Dotnet.dll
 D:\Handmade_Dotnet\bin\Debug\net8.0\MySqlConnector.dll
 D:\Handmade_Dotnet\obj\Debug\net8.0\Handmade_Dotnet.csproj.AssemblyReference.cache
 D:\Handmade_Dotnet\obj\Debug\net8.0\Handmade.2792E188.Up2Date
+D:\Handmade_Dotnet\obj\Debug\net8.0\Handmade_Dotnet.sourcelink.json

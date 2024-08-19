@@ -16,117 +16,34 @@
       </div>
 
       <div class="box-wrapper box-container">
-        <!-- <div class="box-item"> -->
-        <div class="box heart-box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="box-buttons">
-              <form class="box-button" action="">
-                <button type="submit"><i class="fas fa-heart"></i></button>
-              </form>
-              <form action="" class="box-button box-middle">
-                <button type="submit">Thêm vào giỏ</button>
-              </form>
-              <form class="box-button" action="#">
-                <button type="submit"><i class="fas fa-share"></i></button>
-              </form>
-            </div>
-          </div>
-          <div class="content">
-            <h3>DDen dkfjdkfgsdfds</h3>
-            <div class="price">&#8363;232323<span>&#8363;232323</span></div>
-          </div>
-        </div>
-
-        <div class="box heart-box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="box-buttons">
-              <form class="box-button" action="">
-                <button type="submit"><i class="fas fa-heart"></i></button>
-              </form>
-              <form action="" class="box-button box-middle">
-                <button type="submit">Thêm vào giỏ</button>
-              </form>
-              <form class="box-button" action="#">
-                <button type="submit"><i class="fas fa-share"></i></button>
-              </form>
-            </div>
-          </div>
-          <div class="content">
-            <h3>DDen dkfjdkfgsdfds</h3>
-            <div class="price">&#8363;232323<span>&#8363;232323</span></div>
-          </div>
-        </div>
-
-        <div class="box heart-box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="box-buttons">
-              <form class="box-button" action="">
-                <button type="submit"><i class="fas fa-heart"></i></button>
-              </form>
-              <form action="" class="box-button box-middle">
-                <button type="submit">Thêm vào giỏ</button>
-              </form>
-              <form class="box-button" action="#">
-                <button type="submit"><i class="fas fa-share"></i></button>
-              </form>
-            </div>
-          </div>
-          <div class="content">
-            <h3>DDen dkfjdkfgsdfds</h3>
-            <div class="price">&#8363;232323<span>&#8363;232323</span></div>
-          </div>
-        </div>
-
-        <div class="box heart-box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="box-buttons">
-              <form class="box-button" action="">
-                <button type="submit"><i class="fas fa-heart"></i></button>
-              </form>
-              <form action="" class="box-button box-middle">
-                <button type="submit">Thêm vào giỏ</button>
-              </form>
-              <form class="box-button" action="#">
-                <button type="submit"><i class="fas fa-share"></i></button>
-              </form>
-            </div>
-          </div>
-          <div class="content">
-            <h3>DDen dkfjdkfgsdfds</h3>
-            <div class="price">&#8363;232323<span>&#8363;232323</span></div>
-          </div>
-        </div>
-
-        <div class="box heart-box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="box-buttons">
-              <form class="box-button" action="">
-                <button type="submit"><i class="fas fa-heart"></i></button>
-              </form>
-              <form action="" class="box-button box-middle">
-                <button type="submit">Thêm vào giỏ</button>
-              </form>
-              <form class="box-button" action="#">
-                <button type="submit"><i class="fas fa-share"></i></button>
-              </form>
-            </div>
-          </div>
-          <div class="content">
-            <h3>DDen dkfjdkfgsdfds</h3>
-            <div class="price">&#8363;232323<span>&#8363;232323</span></div>
-          </div>
-        </div>
-        <!-- </div> -->
+        @{
+          if (ViewBag.favoriteProducts!=null)
+          {
+            foreach (var product in ViewBag.favoriteProducts){
+              <div class="box heart-box">
+                <span class="discount">-@product.DiscountPercentage%</span>
+                <div class="image">
+                  <img src="@product.Image" alt="image" />
+                  <div class="box-buttons">
+                    <form class="box-button" action="">
+                      <button type="submit"><i class="fas fa-heart"></i></button>
+                    </form>
+                    <form action="" class="box-button box-middle">
+                      <button type="submit">Thêm vào giỏ</button>
+                    </form>
+                    <form class="box-button" action="#">
+                      <button type="submit"><i class="fas fa-share"></i></button>
+                    </form>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>@product.ProductName</h3>
+                  <div class="price">&#8363;@product.DiscountedPrice<span>&#8363;@product.OriginalPrice</span></div>
+                </div>
+              </div>
+            }
+          }
+        }
       </div>
 
       <div class="may">
@@ -135,102 +52,30 @@
       </div>
 
       <div class="tu3">
-        <!-- <div class="tu3-box"> -->
-        <div class="box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Thêm vào giỏ</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>dfd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;2323
-              <span>&#8363;2323</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Thêm vào giỏ</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>dfd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;2323
-              <span>&#8363;2323</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Thêm vào giỏ</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>dfd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;2323
-              <span>&#8363;2323</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Thêm vào giỏ</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>dfd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;2323
-              <span>&#8363;2323</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <span class="discount">34</span>
-          <div class="image">
-            <img src="./Uploads/sp1a.jpg" alt="image" />
-            <div class="icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="cart-btn">Thêm vào giỏ</a>
-              <a href="#" class="fas fa-share"></a>
-            </div>
-          </div>
-          <div class="content">
-            <h3>dfd dfdf dfdf</h3>
-            <div class="price">
-              &#8363;2323
-              <span>&#8363;2323</span>
-            </div>
-          </div>
-        </div>
-        <!-- </div> -->
+        @{
+          int count=0;
+          foreach (var product in ViewBag.products){
+            if (count>4) break;
+             <div class="box">
+                <span class="discount">-@product.DiscountPercentage%</span>
+                <div class="image">
+                  <img src="@product.Image" alt="image" />
+                  <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Thêm vào giỏ</a>
+                    <a href="#" class="fas fa-share"></a>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>@product.ProductName</h3>
+                  <div class="price">
+                    &#8363;@product.DiscountedPrice<span>&#8363;@product.OriginalPrice</span>
+                  </div>
+                </div>
+              </div>
+              count++;
+          }
+        }
       </div>
 
       <div class="icons">
@@ -246,57 +91,25 @@
       </div>
 
       <div class="tutorial-box-wrapper box-container">
-        <div class="box">
-          <video
-            class="box-video"
-            controls
-            src="./Uploads/vd1.mp4"
-            muted
-          ></video>
+        @{
+          if (ViewBag.favoriteTutorials != null)
+          {
+            foreach (var tutorial in ViewBag.favoriteTutorials){
+              <div class="box">
+                <video
+                  class="box-video"
+                  controls
+                  src="@tutorial.Video"
+                  muted
+                ></video>
 
-          <div class="content">
-            <h3 style="font-size: 1.8rem">feff dfdsf efsdf</h3>
-            <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
-          </div>
-        </div>
-        <div class="box">
-          <video
-            class="box-video"
-            controls
-            src="./Uploads/vd1.mp4"
-            muted
-          ></video>
-
-          <div class="content">
-            <h3 style="font-size: 1.8rem">feff dfdsf efsdf</h3>
-            <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
-          </div>
-        </div>
-        <div class="box">
-          <video
-            class="box-video"
-            controls
-            src="./Uploads/vd1.mp4"
-            muted
-          ></video>
-
-          <div class="content">
-            <h3 style="font-size: 1.8rem">feff dfdsf efsdf</h3>
-            <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
-          </div>
-        </div>
-        <div class="box">
-          <video
-            class="box-video"
-            controls
-            src="./Uploads/vd1.mp4"
-            muted
-          ></video>
-
-          <div class="content">
-            <h3 style="font-size: 1.8rem">feff dfdsf efsdf</h3>
-            <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
-          </div>
-        </div>
+                <div class="content">
+                  <h3 style="font-size: 1.8rem">@tutorial.TutorialName</h3>
+                  <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            }
+          }
+        }
       </div>
     </section>
