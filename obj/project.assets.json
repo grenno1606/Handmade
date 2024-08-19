@@ -148,11 +148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Handmade_Dotnet\\Handmade_Dotnet.csproj",
+      "projectUniqueName": "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj",
       "projectName": "Handmade_Dotnet",
-      "projectPath": "D:\\Handmade_Dotnet\\Handmade_Dotnet.csproj",
+      "projectPath": "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj",
       "packagesPath": "C:\\Users\\duong\\.nuget\\packages\\",
-      "outputPath": "D:\\Handmade_Dotnet\\obj\\",
+      "outputPath": "C:\\Users\\duong\\Downloads\\Handmade\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\duong\\AppData\\Roaming\\NuGet\\NuGet.Config"

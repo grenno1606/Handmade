@@ -1,130 +1,137 @@
 ﻿@{
-    ViewData["Title"] = "Cart Page";
+  ViewData["Title"] = "Cart Page";
 }
 
 <section class="cart">
-      <div class="icons">
-        <i class="fa-solid fa-cart-plus"></i>
-      </div>
+  <div class="icons">
+    <i class="fa-solid fa-cart-plus"></i>
+  </div>
 
-      <div class="gh">
-        <span>Giỏ hàng của bạn</span>
-        <form class="tk" action="">
-          <input type="text" placeholder="Tìm kiếm..." name="search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
+  <div class="gh">
+    <span>Giỏ hàng của bạn</span>
+    <form class="tk" action="">
+      <input type="text" placeholder="Tìm kiếm..." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
 
-      <div class="tu">
-        <div class="cb"></div>
-        <div class="pr">Sản phẩm</div>
-        <div class="na">Tên sản phẩm</div>
-        <div class="pri">Đơn giá</div>
-        <div class="num">Số lượng</div>
-        <div class="mon">Số tiền</div>
-        <div class="ope">Thao tác</div>
-      </div>
-      @{
-        int total=0;
-        if (ViewBag.cartProducts!=null){
-          foreach (var product in ViewBag.cartProducts){
-            <div class="tu1">
-              <div class="cb"><input type="checkbox" /></div>
-              <div class="pr"><img src="@product.Image" alt="image" /></div>
-              <div class="na">@product.ProductName</div>
-              <div class="pri">
-                <span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
-                &#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))
-              </div>
-              <div class="num">
-                <button class="dec">-</button>
-                <input class="cen" type="text" value="@product.Amount" />
-                <button class="in">+</button>
-              </div>
-              <div class="mon">&#8363;@((product.DiscountedPrice * product.Amount).ToString("#,##0", new System.Globalization.CultureInfo("vi-VN")))</div>
-              <div class="ope">
-                <form action="">
-                  <button type="submit">Xoá</button>
-                </form>
-                <br />
-                Tìm sản phẩm tương tự <i class="fa-solid fa-caret-down"></i>
-              </div>
-            </div>
-            total+=product.DiscountedPrice * product.Amount;
-          }
-        }
+  <div class="tu">
+    <div class="cb"></div>
+    <div class="pr">Sản phẩm</div>
+    <div class="na">Tên sản phẩm</div>
+    <div class="pri">Đơn giá</div>
+    <div class="num">Số lượng</div>
+    <div class="mon">Số tiền</div>
+    <div class="ope">Thao tác</div>
+  </div>
+  @{
+    int total = 0;
+    if (ViewBag.cartProducts != null)
+    {
+      foreach (var product in ViewBag.cartProducts)
+      {
+        <div class="tu1">
+          <div class="cb"><input type="checkbox" /></div>
+          <div class="pr"><img src="@product.Image" alt="image" /></div>
+          <div class="na">@product.ProductName</div>
+          <div class="pri">
+            <span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
+            &#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))
+          </div>
+          <div class="num">
+            <button class="dec">-</button>
+            <input class="cen" type="text" value="@product.Amount" />
+            <button class="in">+</button>
+          </div>
+          <div class="mon">&#8363;@((product.DiscountedPrice * product.Amount).ToString("#,##0", new
+      System.Globalization.CultureInfo("vi-VN")))</div>
+          <div class="ope">
+            <form action="">
+              <button type="submit">Xoá</button>
+            </form>
+            <br />
+            Tìm sản phẩm tương tự <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        total += product.DiscountedPrice * product.Amount;
       }
+    }
+  }
 
-      <div class="tu2">
-        <div class="cb"><input type="checkbox"/></div>
-        <div class="se">Chọn tất cả</div>
-        <div class="del">Xoá</div>
-        <div class="save">Lưu vào mục yêu thích</div>
-        <div class="num">Tổng thanh toán: &#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</div>
-        <form asp-area="" asp-controller="Checkout" asp-action="Index">
-          <button type="submit">Mua hàng</button>
-        </form>
-      </div>
+  <div class="tu2">
+    <div class="cb"><input type="checkbox" /></div>
+    <div class="se">Chọn tất cả</div>
+    <div class="del">Xoá</div>
+    <div class="save">Lưu vào mục yêu thích</div>
+    <div class="num">Tổng thanh toán: &#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))
+    </div>
+    <form asp-area="" asp-controller="Checkout" asp-action="Index">
+      <button type="submit">Mua hàng</button>
+    </form>
+  </div>
 
-      <div class="may">
-        <div>CÓ THỂ BẠN CŨNG THÍCH</div>
-        <a asp-area="" asp-controller="Product" asp-action="Index">Xem tất cả ></a>
-      </div>
+  <div class="may">
+    <div>CÓ THỂ BẠN CŨNG THÍCH</div>
+    <a asp-area="" asp-controller="Product" asp-action="Index">Xem tất cả ></a>
+  </div>
 
-      <div class="tu3">
-        @{
-          int count=0;
-          foreach (var product in ViewBag.products){
-            if (count>4) break;
-              <div class="box">
-                <span class="discount">-@product.DiscountPercentage%</span>
-                <div class="image">
-                  <img src="@product.Image" alt="image" />
-                  <div class="iconss">
-                    <a href="#" class="fas fa-heart"></a>
-                    <form action="">
-                      <button class="cart-btn" type="submit">Thêm vào giỏ</button>
-                    </form>
-                    <a href="#" class="fas fa-share"></a>
-                  </div>
-                </div>
-                <div class="content">
-                  <h3>@product.ProductName</h3>
-                  <div class="price">
-                    &#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))<span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
-                  </div>
-                </div>
-              </div>
-          count++;
-          }
-        }
-      </div>
-    </section>
+  <div class="tu3">
+    @{
+      int count = 0;
+      foreach (var product in ViewBag.products)
+      {
+        if (count > 4) break;
+        <div class="box">
+          <span class="discount">-@product.DiscountPercentage%</span>
+          <div class="image">
+            <img src="@product.Image" alt="image" />
+            <div class="iconss">
+              <a href="@Href($"/Heart/AddProduct/{product.ProductId}")" class="fas fa-heart"></a>
+              <form action="@Href($"/Cart/AddProduct/{product.ProductId}")">
+                <button class="cart-btn" type="submit">Thêm vào giỏ</button>
+              </form>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>@product.ProductName</h3>
+            <div class="price">
+              &#8363;@product.DiscountedPrice.ToString("#,##0", new
+          System.Globalization.CultureInfo("vi-VN"))<span>&#8363;@product.OriginalPrice.ToString("#,##0", new
+            System.Globalization.CultureInfo("vi-VN"))</span>
+            </div>
+          </div>
+        </div>
+        count++;
+      }
+    }
+  </div>
+</section>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('.tu1').forEach(function (productElement) {
-            var decButton = productElement.querySelector('.dec');
-            var inButton = productElement.querySelector('.in');
-            var quantityInput = productElement.querySelector('.cen');
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.tu1').forEach(function (productElement) {
+      var decButton = productElement.querySelector('.dec');
+      var inButton = productElement.querySelector('.in');
+      var quantityInput = productElement.querySelector('.cen');
 
-            decButton.addEventListener('click', function () {
-                var currentValue = parseInt(quantityInput.value, 10);
-                if (currentValue > 1) {
-                    quantityInput.value = currentValue - 1;
-                    updateTotalPrice(productElement);
-                }
-            });
+      decButton.addEventListener('click', function () {
+        var currentValue = parseInt(quantityInput.value, 10);
+        if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
+          updateTotalPrice(productElement);
+        }
+      });
 
-            inButton.addEventListener('click', function () {
-                var currentValue = parseInt(quantityInput.value, 10);
-                quantityInput.value = currentValue + 1;
-                updateTotalPrice(productElement);
-            });
-        });
+      inButton.addEventListener('click', function () {
+        var currentValue = parseInt(quantityInput.value, 10);
+        quantityInput.value = currentValue + 1;
+        updateTotalPrice(productElement);
+      });
     });
+  });
 
-   function updateTotalPrice(productElement) {
+  function updateTotalPrice(productElement) {
     var quantity = parseInt(productElement.querySelector('.cen').value, 10);
 
     var discountedPriceText = productElement.querySelector('.pri').childNodes[2].textContent.trim();
@@ -133,5 +140,5 @@
     var totalPrice = discountedPrice * quantity;
 
     productElement.querySelector('.mon').innerHTML = `&#8363;${totalPrice.toLocaleString()}`;
-}
+  }
 </script>

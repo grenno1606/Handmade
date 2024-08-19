@@ -55,10 +55,9 @@ public class UserCartService
     public void Add(UserCartModel userCart)
     {
         Database database = new Database();
-        var command = database.CreateCommand("INSERT INTO usercart(username, productid, quantity) VALUES (@userName, @productId, @quantity)");
+        var command = database.CreateCommand("INSERT INTO usercart(username, productid) VALUES (@userName, @productId)");
         command.Parameters.AddWithValue("@userName", userCart.Username);
         command.Parameters.AddWithValue("@productId", userCart.ProductId);
-        command.Parameters.AddWithValue("@quantity", userCart.Quantity);
         command.ExecuteNonQuery();
         database.CloseConnection();
     }

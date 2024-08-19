@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+is2+VOoRZ4=",
+  "dgSpecHash": "4Hfv9SJnrE8=",
   "success": true,
-  "projectFilePath": "D:\\Handmade_Dotnet\\Handmade_Dotnet.csproj",
+  "projectFilePath": "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duong\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\duong\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512"

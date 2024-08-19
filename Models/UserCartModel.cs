@@ -7,13 +7,12 @@ public class UserCartModel{
     public int Quantity;
     public DateTime CreatedAt;
     public DateTime UpdatedAt;
-    public UserCartModel(String Username,String ProductId,int Quantity){
+    public UserCartModel(String Username,String ProductId){
         this.Username = Username;
         this.ProductId = ProductId;
-        this.Quantity = Quantity;
     }
     public static UserCartModel FromDatabase(MySqlDataReader reader)
     {
-        return new UserCartModel(reader.GetString("username"),reader.GetString("productid"),reader.GetInt32("quantity"));
+        return new UserCartModel(reader.GetString("username"),reader.GetString("productid"));
     }
 }

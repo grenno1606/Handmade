@@ -18,6 +18,13 @@ public class CartController : Controller
         return View();
     }
 
+    public IActionResult AddProduct(String id)
+    {
+        UserCartModel userCartModel= new UserCartModel("Dunn",id);
+        userCartService.Add(userCartModel);
+        return Redirect(Request.Headers.Referer.ToString());
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

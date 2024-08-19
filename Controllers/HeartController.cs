@@ -23,6 +23,22 @@ public class HeartController : Controller
         return View();
     }
 
+    public IActionResult AddProduct(String id)
+    {
+        FavoriteProductModel favoriteProductModel= new FavoriteProductModel("Dunn",id);
+        favoriteProductsService.Add(favoriteProductModel);
+        return Redirect(Request.Headers.Referer.ToString());
+    }
+
+     public IActionResult AddTutorial(String id)
+    {
+        FavoriteTutorialModel favoriteTutorial=new FavoriteTutorialModel("Dunn",id);
+        favoriteTutorialsService.Add(favoriteTutorial);
+        return Redirect(Request.Headers.Referer.ToString());
+    }
+
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

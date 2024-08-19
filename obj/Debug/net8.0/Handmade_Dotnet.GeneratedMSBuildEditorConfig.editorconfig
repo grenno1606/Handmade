@@ -9,59 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Handmade_Dotnet
 build_property.RootNamespace = Handmade_Dotnet
-build_property.ProjectDir = D:\Handmade_Dotnet\
+build_property.ProjectDir = C:\Users\duong\Downloads\Handmade\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Handmade_Dotnet
+build_property.MSBuildProjectDirectory = C:\Users\duong\Downloads\Handmade
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Handmade_Dotnet/Views/Cart/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Checkout/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Checkout/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Heart/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Heart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhcnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Home/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/OrderSuccess/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/OrderSuccess/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJTdWNjZXNzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Product/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Shared/Error.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Shared/_Layout.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/Tutorial/Index.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/Tutorial/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JpYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/_ViewImports.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Handmade_Dotnet/Views/_ViewStart.cshtml]
+[C:/Users/duong/Downloads/Handmade/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
