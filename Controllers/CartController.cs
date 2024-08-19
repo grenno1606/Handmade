@@ -25,6 +25,12 @@ public class CartController : Controller
         return Redirect(Request.Headers.Referer.ToString());
     }
 
+    public IActionResult DeleteProduct(String id)
+    {
+        userCartService.Delete(id);
+        return Redirect(Request.Headers.Referer.ToString());
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

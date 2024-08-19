@@ -46,7 +46,7 @@
           <div class="mon">&#8363;@((product.DiscountedPrice * product.Amount).ToString("#,##0", new
       System.Globalization.CultureInfo("vi-VN")))</div>
           <div class="ope">
-            <form action="">
+            <form action="@Href($"/Cart/DeleteProduct/{product.ProductId}")">
               <button type="submit">Xoá</button>
             </form>
             <br />

@@ -26,7 +26,7 @@
             <div class="image">
               <img src="@product.Image" alt="image" />
               <div class="box-buttons">
-                <form class="box-button" action="@Href($"/Heart/AddProduct/{product.ProductId}")">
+                <form class="box-button" action="@Href($"/Heart/DeleteProduct/{product.ProductId}")">
                   <button type="submit"><i class="fas fa-heart"></i></button>
                 </form>
                 <form action="@Href($"/Cart/AddProduct/{product.ProductId}")" class="box-button box-middle">
@@ -107,7 +107,8 @@
 
             <div class="content">
               <h3 style="font-size: 1.8rem">@tutorial.TutorialName</h3>
-              <a href="" class="btt"><i class="fa-solid fa-heart"></i></a>
+              <a href="@Href($"/Heart/DeleteTutorial/{tutorial.TutorialId}")" class="btt"><i
+                  class="fa-solid fa-heart"></i></a>
             </div>
           </div>
         }

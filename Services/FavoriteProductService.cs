@@ -43,10 +43,10 @@ public class FavoriteProductsService
         database.CloseConnection();
     }
 
-    public void Delete(int id)
+    public void Delete(String id)
     {
         Database database = new Database();
-        var command = database.CreateCommand("DELETE FROM favoriteproducts WHERE favoriteid = @id");
+        var command = database.CreateCommand("DELETE FROM favoriteproducts WHERE productid = @id");
         command.Parameters.AddWithValue("@id", id);
         command.ExecuteNonQuery();
         database.CloseConnection();

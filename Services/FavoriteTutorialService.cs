@@ -41,12 +41,12 @@ public class FavoriteTutorialsService
         database.CloseConnection();
     }
 
-    public void Delete(int id)
+    public void Delete(String id)
     {
         Database database = new Database();
-        var command = database.CreateCommand("DELETE FROM favoritetutorials WHERE favoriteid = @id");
+        var command = database.CreateCommand("DELETE FROM favoritetutorials WHERE tutorialid = @id");
         command.Parameters.AddWithValue("@id", id);
-        command.ExecuteNonQuery();
+        command.ExecuteNonQuery();  
         database.CloseConnection();
     }
 }
