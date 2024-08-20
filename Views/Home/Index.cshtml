@@ -96,15 +96,10 @@
           <div class="image">
             <img src="@product.Image" alt="image" />
             <div class="icons">
-              <form class="cart-btn1" action="@Href($"/Heart/AddProduct/{product.ProductId}")" method="post">
-                <button type="submit"><i class="fas fa-heart"></i></button>
-              </form>
-              <form action="@Href($"/Cart/AddProduct/{product.ProductId}")" method="post" class="form-ac">
-                <button class="form-ac" type="submit">Thêm vào giỏ</button>
-              </form>
-              <form class="cart-btn1" action="#">
-                <button type="submit"><i class="fas fa-share"></i></button>
-              </form>
+              <button class="cart-btn1" onclick="addProductToHeart('@product.ProductId')"><i
+                  class="fas fa-heart"></i></button>
+              <button class="form-ac" onclick="addProductToCart('@product.ProductId')">Thêm vào giỏ</button>
+              <button class="cart-btn1"><i class="fas fa-share"></i></button>
             </div>
           </div>
           <div class="content">
@@ -135,7 +130,8 @@
           <video controls src="@tutorial.Video" muted></video>
           <div class="content">
             <h3>@tutorial.TutorialName</h3>
-            <a href="@Href($"/Heart/AddTutorial/{tutorial.TutorialId}")" class="btt"><i class="fa-solid fa-heart"></i></a>
+            <button onclick="addTutorialToHeart('@tutorial.TutorialId')" class="btt"><i
+                class="fa-solid fa-heart"></i></button>
           </div>
         </div>
         countt++;

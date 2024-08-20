@@ -1,6 +1,186 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\bg.png",
+      "PackagePath": "staticwebassets\\Uploads\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\ct.png",
+      "PackagePath": "staticwebassets\\Uploads\\ct.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\ic1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\ic2.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\ic3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\ic4.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ic4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\kh1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\kh2.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\kh3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\kh4.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\kh5.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\kh5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp1a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp1b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp1c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp1d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp1e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp1f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp1f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp2a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp2b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp2c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp2d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp2e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp2f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp2f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp3a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp3b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp3c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp3d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp3e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp3f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp3f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp4a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp4b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp4c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp4d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp4e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\sp4f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sp4f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\tt.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\tt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd1.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd2.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd3.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd3.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd4.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd4.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd5.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd5.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd6.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd6.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd7.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd7.mp4"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\vd8.mp4",
+      "PackagePath": "staticwebassets\\Uploads\\vd8.mp4"
+    },
+    {
       "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\css\\Style.css",
       "PackagePath": "staticwebassets\\css\\Style.css"
     },
