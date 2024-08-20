@@ -1,91 +1,101 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Handmade_Dotnet</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - Handmade_Dotnet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
 </head>
+
 <body>
-    <header>
-      <input type="checkbox" name="" id="toggler" />
-      <label for="toggler" class="fas fa-bars"></label>
+  <header>
+    <input type="checkbox" name="" id="toggler" />
+    <label for="toggler" class="fas fa-bars"></label>
 
-      <a class="logo" asp-area="" asp-controller="Home" asp-action="Index">Handmade<span>.</span></a>
+    <a class="logo" asp-area="" asp-controller="Home" asp-action="Index">Handmade<span>.</span></a>
 
-      <nav class="navbar">
-        <a href="@Href("/Home#home")">Trang Chủ</a>
-        <a href="@Href("/Home#about")">Giới Thiệu</a>
-        <a href="@Href("/Home#products")">Sản Phẩm</a>
-        <a href="@Href("/Home#tutorial")">Hướng Dẫn</a>
-        <a href="@Href("/Home#review")">Đánh Giá</a>
-        <a href="@Href("/Home#contact")">Liên Hệ</a>
-      </nav>
+    <nav class="navbar">
+      <a href="@Href("/Home#home")">Trang Chủ</a>
+      <a href="@Href("/Home#about")">Giới Thiệu</a>
+      <a href="@Href("/Home#products")">Sản Phẩm</a>
+      <a href="@Href("/Home#tutorial")">Hướng Dẫn</a>
+      <a href="@Href("/Home#review")">Đánh Giá</a>
+      <a href="@Href("/Home#contact")">Liên Hệ</a>
+    </nav>
 
-      <div class="icons">
-        <i class="fas fa-search" id="search-icon"></i>
-        <a class="fas fa-heart" asp-area="" asp-controller="Heart" asp-action="Index"></a>
-        <a class="fas fa-shopping-cart" asp-area="" asp-controller="Cart" asp-action="Index"></a>
-        <a class="fas fa-user" asp-area="" asp-controller="Login" asp-action="Index"></a>
+    <div class="icons">
+      <i class="fas fa-search" id="search-icon"></i>
+      <a class="fas fa-heart" asp-area="" asp-controller="Heart" asp-action="Index"></a>
+      <a class="fas fa-shopping-cart" asp-area="" asp-controller="Cart" asp-action="Index"></a>
+      <a class="fas fa-user" asp-area="" asp-controller="Login" asp-action="Index"></a>
+    </div>
+
+    <form action="" class="search-form">
+      <input type="search" name="" placeholder="Tìm kiếm..." id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+  </header>
+  @RenderBody()
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Mục Lục</h3>
+        <a href="./HomeView.html#">Trang Chủ</a>
+        <a href="./HomeView.html#about">Giới Thiệu</a>
+        <a href="./HomeView.html#products">Sản Phẩm</a>
+        <a href="./HomeView.html#tutorial">Hướng Dẫn</a>
+        <a href="./HomeView.html#review">Đánh Giá</a>
+        <a href="./HomeView.html#contact">Liên Hệ</a>
       </div>
 
-      <form action="" class="search-form">
-        <input
-          type="search"
-          name=""
-          placeholder="Tìm kiếm..."
-          id="search-box"
-        />
-        <label for="search-box" class="fas fa-search"></label>
-      </form>
-    </header>
-    @RenderBody()
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
-          <h3>Mục Lục</h3>
-          <a href="./HomeView.html#">Trang Chủ</a>
-          <a href="./HomeView.html#about">Giới Thiệu</a>
-          <a href="./HomeView.html#products">Sản Phẩm</a>
-          <a href="./HomeView.html#tutorial">Hướng Dẫn</a>
-          <a href="./HomeView.html#review">Đánh Giá</a>
-          <a href="./HomeView.html#contact">Liên Hệ</a>
-        </div>
-
-        <div class="box">
-          <h3>Tài Khoản</h3>
-          <a href="./HeartView.html">Mục Yêu Thích</a>
-          <a href="./CartView.html">Đơn Hàng Của Tôi</a>
-          <a href="./LoginView.html">Tài Khoản Của Tôi</a>
-        </div>
-
-        <div class="box">
-          <h3>Hỗ Trợ</h3>
-          <a href="#">Mua Hàng</a>
-          <a href="#">Bán Hàng</a>
-          <a href="#">Thanh Toán</a>
-          <a href="#">Trả Hàng & Hoàn Tiền</a>
-          <a href="#">Chăm Sóc Khách Hàng</a>
-        </div>
-
-        <div class="box">
-          <h3>Thông Tin Liên Hệ</h3>
-          <a href="#">0123 456 789</a>
-          <a href="#">Handmade@gmail.com</a>
-          <a href="#">116-Ngũ Hành Sơn, Đà Nẵng</a>
-          <img src="~/Uploads/tt.jpg" alt="image" />
-        </div>
+      <div class="box">
+        <h3>Tài Khoản</h3>
+        <a href="./HeartView.html">Mục Yêu Thích</a>
+        <a href="./CartView.html">Đơn Hàng Của Tôi</a>
+        <a href="./LoginView.html">Tài Khoản Của Tôi</a>
       </div>
 
-      <div class="credit">
-        &copy;2024 <span>Handmade</span> | Tất Cả Các Quyền Được Bảo Lưu.
+      <div class="box">
+        <h3>Hỗ Trợ</h3>
+        <a href="#">Mua Hàng</a>
+        <a href="#">Bán Hàng</a>
+        <a href="#">Thanh Toán</a>
+        <a href="#">Trả Hàng & Hoàn Tiền</a>
+        <a href="#">Chăm Sóc Khách Hàng</a>
       </div>
-    </section>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/script.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+      <div class="box">
+        <h3>Thông Tin Liên Hệ</h3>
+        <a href="#">0123 456 789</a>
+        <a href="#">Handmade@gmail.com</a>
+        <a href="#">116-Ngũ Hành Sơn, Đà Nẵng</a>
+        <img src="~/Uploads/tt.jpg" alt="image" />
+      </div>
+    </div>
+
+    <div class="credit">
+      &copy;2024 <span>Handmade</span> | Tất Cả Các Quyền Được Bảo Lưu.
+    </div>
+  </section>
+  <script>
+    function addProductToCart(str) {
+      fetch(`/Cart/AddProduct/${str}`);
+      alert("cuc cuc");
+    }
+    function addProductToHeart(str) {
+      fetch(`/Heart/AddProduct/${str}`);
+    }
+    function addTutorialToHeart(str) {
+      fetch(`/Heart/AddTutorial/${str}`)
+    }
+  </script>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/script.js" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

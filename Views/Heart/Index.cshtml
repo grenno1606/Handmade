@@ -26,15 +26,16 @@
             <div class="image">
               <img src="@product.Image" alt="image" />
               <div class="box-buttons">
-                <form class="box-button" action="@Href($"/Heart/DeleteProduct/{product.ProductId}")">
-                  <button type="submit"><i class="fas fa-heart"></i></button>
-                </form>
-                <form action="@Href($"/Cart/AddProduct/{product.ProductId}")" class="box-button box-middle">
-                  <button type="submit">Thêm vào giỏ</button>
-                </form>
-                <form class="box-button" action="#">
-                  <button type="submit"><i class="fas fa-share"></i></button>
-                </form>
+                @* <form class="box-button" action="@Href($"/Heart/DeleteProduct/{product.ProductId}")"> *@
+                <button class="box-button" href="@Href($"/Heart/DeleteProduct/{product.ProductId}")"><i
+                    class="fas fa-heart"></i></button>
+                @* </form> *@
+                @* <form action="@Href($"/Cart/AddProduct/{product.ProductId}")" class="box-button box-middle"> *@
+                <button onclick="addProductToCart('@product.ProductId')" class="box-button box-middle">Thêm vào giỏ</button>
+                @* </form> *@
+                @* <form class="box-button" action="#"> *@
+                <button class="box-button"><i class="fas fa-share"></i></button>
+                @* </form> *@
               </div>
             </div>
             <div class="content">
@@ -66,8 +67,8 @@
             <img src="@product.Image" alt="image" />
             <div class="icons">
               <a href="@Href($"/Heart/AddProduct/{product.ProductId}")" class="fas fa-heart"></a>
-              <a href="@Href($"/Cart/AddProduct/{product.ProductId}")" class="cart-btn">Thêm vào giỏ</a>
-              <a href="#" class="fas fa-share"></a>
+              <button href="@Href($"/Cart/AddProduct/{product.ProductId}")" class="cart-btn">Thêm vào giỏ</button>
+              <button href="#" class="fas fa-share"></button>
             </div>
           </div>
           <div class="content">

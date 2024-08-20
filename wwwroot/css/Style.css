@@ -393,6 +393,7 @@ header .fa-bars {
 }
 
 .products .box-container .box {
+  width: calc(100% / 4 - 1.5rem);
   flex: 1 1 30rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
@@ -499,6 +500,7 @@ header .fa-bars {
 }
 
 .tutorial .video-container .row {
+  width: calc(100% / 4 - 1.5rem);
   display: flex;
   flex-direction: column;
   flex: 1 1 30rem;
@@ -895,7 +897,8 @@ header .help span {
 .heart .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 2rem;
+  /* justify-content: space-between; */
 }
 
 .heart .box-container .box {
@@ -1113,6 +1116,7 @@ header .help span {
   bottom: 0;
 }
 
+.heart .tu3 .box .image .icons button,
 .heart .tu3 .box .image .icons a {
   height: 5rem;
   line-height: 5rem;
@@ -1128,6 +1132,7 @@ header .help span {
   width: 100%;
 }
 
+.heart .tu3 .box .image .icons button:hover,
 .heart .tu3 .box .image .icons a:hover {
   background: #333;
 }
@@ -1159,14 +1164,13 @@ header .help span {
 .heart .tutorial-box-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
+  gap: 2rem;
   /* justify-content: space-between; */
   justify-content: start;
 }
 
 .heart .tutorial-box-wrapper .box {
   padding: 1rem;
-  margin-right: 2rem;
   width: calc(100% / 4 - 1.5rem);
 }
 
@@ -1223,8 +1227,8 @@ header .help span {
   background-color: #333;
 }
 
-.heart .box-button button {
-  background-color: transparent;
+.heart .box-button {
+  /* background-color: transparent; */
   color: white;
   font-size: 1.6rem;
   cursor: pointer;
@@ -1379,6 +1383,7 @@ header .help span {
 }
 
 .cart .tu1 .ope button {
+  color: var(--green);
   background-color: white;
   cursor: pointer;
   font-size: 1.5rem;
@@ -1516,7 +1521,7 @@ header .help span {
   bottom: 0;
 }
 
-.cart .tu3 .box .image .iconss a {
+.cart .tu3 .box .image .iconss button {
   height: 5rem;
   line-height: 5rem;
   font-size: 1.5rem;
@@ -1547,7 +1552,7 @@ header .help span {
   width: 100%;
 }
 
-.cart .tu3 .box .image .iconss a:hover {
+.cart .tu3 .box .image .iconss button:hover {
   background: #333;
 }
 
@@ -1679,6 +1684,10 @@ header .help span {
   padding: 0.6rem;
 }
 
+.products .box-container .box-product {
+  width: 100%;
+}
+
 /* tutorial-css--------------------------------------------- */
 
 .tutorial .page {
@@ -1726,6 +1735,10 @@ header .help span {
 .tutorial .box-wrapper .box-item {
   width: 25%;
   padding: 0.6rem;
+}
+
+.tutorial .box-wrapper .row-tutorial {
+  width: 100%;
 }
 
 /* checkout-css------------------------------------------------------ */
