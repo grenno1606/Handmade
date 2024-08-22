@@ -3,26 +3,31 @@
   var userCartModels = ViewBag.userCartModels as List<UserCartModel>;
 }
 
- <main class="checkout-container">
-      <div class="box box-left">
-        <h3>Đơn hàng</h3>
-        <div class="line"><hr /></div>
-        <ul class="left__list">
-          @{
-            if (ViewBag.cartProducts!=null){
-            foreach (var product in ViewBag.cartProducts){
-              <li class="left__item">
-                <div class="item__image">
-                  <img src="~/uploads/@product.Image" alt="image" />
-                </div>
-                <div class="item__detail">
-                  <p class="item__name">@product.ProductName</p>
-                  <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</p>
-                  <p>x @product.Amount</p>
-                </div>
-              </li>
-            }
-            }
+<main class="checkout-container">
+  <div class="box box-left">
+    <h3>Đơn hàng</h3>
+    <div class="line">
+      <hr />
+    </div>
+    <ul class="left__list">
+      @{
+        if (ViewBag.cartProducts != null)
+        {
+          int i = 0;
+          foreach (var product in ViewBag.cartProducts)
+          {
+            <li class="left__item">
+              <div class="item__image">
+                <img src="~/uploads/@product.Image" alt="image" />
+              </div>
+              <div class="item__detail">
+                <p class="item__name">@product.ProductName</p>
+                <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new
+            System.Globalization.CultureInfo("vi-VN"))</p>
+                <p style="color: var(--green);font-weight: bold;">x @userCartModels[i].Quantity</p>
+              </div>
+            </li>
+            i++;
           }
         }
       }

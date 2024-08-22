@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 public class UserCartService
 {
-    public List<UserCartModel> GetAll()
+    public List<UserCartModel> GetAll(string username)
     {
         List<UserCartModel> userCarts = new List<UserCartModel>();
         Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM usercart");
+        var command = database.CreateCommand("SELECT * FROM usercart WHERE username = @username");
+        command.Parameters.AddWithValue("username", username);
         var reader = command.ExecuteReader();
         while (reader.Read())
         {
@@ -72,10 +73,10 @@ public class UserCartService
     public void Update(UserCartModel userCart)
     {
         Database database = new Database();
-        var command = database.CreateCommand("UPDATE usercart SET quantity = @quantity WHERE productid = @productId");
+        var command = database.CreateCommand("UPDATE usercart SET quantity = @quantity WHERE productid = @productId AND username=@username");
         command.Parameters.AddWithValue("@quantity", userCart.Quantity);
         command.Parameters.AddWithValue("@productId", userCart.ProductId);
-        // command.Parameters.AddWithValue("@username",userCart.Username);
+        command.Parameters.AddWithValue("@username",userCart.Username);
         command.ExecuteNonQuery();
         database.CloseConnection();
     }

@@ -17,6 +17,8 @@ public class CartController : Controller
             }
         List<ProductModel> cartProducts = userCartService.GetByUsername(username); //---------------------------
         ViewBag.cartProducts = cartProducts;
+        List<UserCartModel> cart=userCartService.GetAll(username);
+        ViewBag.cart = cart;
         List<ProductModel> products = productService.GetAll();
         ViewBag.products = products;
         return View();

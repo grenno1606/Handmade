@@ -65,7 +65,12 @@ public class HeartController : Controller
 
     public ActionResult DeleteTutorial(String id)
     {
-        favoriteTutorialsService.Delete(id);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        favoriteTutorialsService.Delete(id,username);
         return Redirect(Request.Headers.Referer.ToString());
     }
     
