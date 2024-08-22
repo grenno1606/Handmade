@@ -10,24 +10,45 @@ public class CartController : Controller
     public UserCartService userCartService=new UserCartService();
     public IActionResult Index()
     {
-        List<ProductModel> cartProducts = userCartService.GetByUsername("Dunn"); //---------------------------
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        List<ProductModel> cartProducts = userCartService.GetByUsername(username); //---------------------------
         ViewBag.cartProducts = cartProducts;
+        List<UserCartModel> cart=userCartService.GetAll(username);
+        ViewBag.cart = cart;
         List<ProductModel> products = productService.GetAll();
         ViewBag.products = products;
-        // userCartService.SetAmount();-------------------------------------------------
         return View();
     }
 
     public IActionResult AddProduct(String id)
     {
-        UserCartModel userCartModel= new UserCartModel("Dunn",id,1);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        // var product=userCartService.GetByUsername(username);
+        var p=userCartService.GetById(id,username);
+        if (p != null) {p.Quantity+=1; userCartService.Update(p);}
+        else{
+        UserCartModel userCartModel= new UserCartModel(username,id,1);
         userCartService.Add(userCartModel);
+        }
         return Redirect(Request.Headers.Referer.ToString());
     }
 
     public IActionResult DeleteProduct(String id)
     {
-        userCartService.Delete(id);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        userCartService.Delete(id,username);
         return Redirect(Request.Headers.Referer.ToString());
     }
 

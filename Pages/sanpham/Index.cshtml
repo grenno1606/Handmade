@@ -1,0 +1,53 @@
+﻿@page
+@model handmade.Pages.sanpham.IndexModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Liệt kê  sản phẩm</p>
+    <a class="btn btn-primary" asp-page="/sanpham/them">THÊM SẢN PHẨM</a>
+    <div class="table_container">
+        <table class="table datatable">
+            <thead>
+                <tr>
+                    <th>TT</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Hình ảnh</th>
+                    <th>Giá gốc</th>
+                    <th>Giá giảm</th>
+                    <th>Phần trăm giảm</th>
+                    <th>Ngày tạo</th>
+                    <th>Ngày cập nhật</th>
+                    <th>Số Lượng</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.sanphams)
+                {
+                    <tr>
+                        <td>@item.productid</td>
+                        <td>@item.productname</td>
+                        <td><img src="~/uploads/@item.image" width="150px"></td>
+                        <td>@item.original_price VNĐ</td>
+                        <td>@item.discounted_price VNĐ</td>
+                        <td>@item.discount_percentage %</td>
+                        <td>@item.created_at</td>
+                        <td>@item.updated_at</td>
+                        <td>@item.amount</td>
+                        <td>
+                            <a class="btn btn-danger rounded-pill" asp-page="../sanpham/sua" asp-route-productid="@item.productid">Sửa</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger rounded-pill" asp-page="../sanpham/xoa" asp-route-productid="@item.productid">Xoa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+
+
+        </table>
+    </div>
+</main>

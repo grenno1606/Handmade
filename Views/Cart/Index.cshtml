@@ -1,5 +1,6 @@
 ﻿@{
   ViewData["Title"] = "Cart Page";
+  var cart = ViewBag.cart as List<UserCartModel>;
 }
 
 <section class="cart">
@@ -28,11 +29,12 @@
     int total = 0;
     if (ViewBag.cartProducts != null)
     {
+      int i = 0;
       foreach (var product in ViewBag.cartProducts)
       {
         <div class="tu1">
           <div class="cb"><input type="checkbox" /></div>
-          <div class="pr"><img src="@product.Image" alt="image" /></div>
+          <div class="pr"><img src="~/uploads/@product.Image" alt="image" /></div>
           <div class="na">@product.ProductName</div>
           <div class="pri">
             <span>&#8363;@product.OriginalPrice.ToString("#,##0", new
@@ -42,7 +44,7 @@
           </div>
           <div class="num">
             <button class="dec">-</button>
-            <input class="cen" type="text" value="1" productId="@product.ProductId" />
+            <input class="cen" type="text" value="@cart[i].Quantity" productId="@product.ProductId" />
             <button class="in">+</button>
           </div>
           <div class="mon">&#8363;@((product.DiscountedPrice).ToString("#,##0", new
@@ -55,6 +57,7 @@
       Tìm sản phẩm tương tự <i class="fa-solid fa-caret-down"></i> *@
           </div>
         </div>
+        i++;
         total += product.DiscountedPrice;
       }
     }
@@ -87,7 +90,7 @@
         <div class="box">
           <span class="discount">-@product.DiscountPercentage%</span>
           <div class="image">
-            <img src="@product.Image" alt="image" />
+            <img src="~/uploads/@product.Image" alt="image" />
             <div class="iconss">
               <button onclick="addProductToHeart('@product.ProductId')" class="fas fa-heart"></button>
               <form action="@Href($"/Cart/AddProduct/{product.ProductId}")">
@@ -145,6 +148,10 @@
 
     var totalPrice = discountedPrice * quantity;
 
-    productElement.querySelector('.mon').innerHTML = `&#8363;${totalPrice.toLocaleString()}`;
+    productElement.querySelector('.mon').innerHTML = `&#8363;${totalPrice.toLocaleString('de-DE', {
+      minimumFractionDigits: 3,
+      maximumFractionDigits: 3
+    }).replace(',', '.')}`;
   }
+  ------------------------------------------------------------------jjjhghfgft
 </script>

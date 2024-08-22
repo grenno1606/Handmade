@@ -31,11 +31,12 @@ public class FavoriteTutorialsService
         return tutorials;
     }
 
-    public FavoriteTutorialModel? GetById(String id)
+    public FavoriteTutorialModel? GetById(String id,string username)
     {
         Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM favoritetutorials WHERE tutorialid = @id");
+        var command = database.CreateCommand("SELECT * FROM favoritetutorials WHERE tutorialid = @id AND username=@username");
         command.Parameters.AddWithValue("@id", id);
+        command.Parameters.AddWithValue("@username",username);
         var reader = command.ExecuteReader();
         if (reader.Read())
         {
@@ -47,7 +48,7 @@ public class FavoriteTutorialsService
 
     public void Add(FavoriteTutorialModel favoriteTutorial)
     {
-        FavoriteTutorialModel? t = GetById(favoriteTutorial.TutorialId);
+        FavoriteTutorialModel? t = GetById(favoriteTutorial.TutorialId,favoriteTutorial.Username);
         if (t != null) {}
         else{
         Database database = new Database();
@@ -59,11 +60,12 @@ public class FavoriteTutorialsService
         }
     }
 
-    public void Delete(String id)
+    public void Delete(String id,String username)
     {
         Database database = new Database();
-        var command = database.CreateCommand("DELETE FROM favoritetutorials WHERE tutorialid = @id");
+        var command = database.CreateCommand("DELETE FROM favoritetutorials WHERE tutorialid = @id AND username = @username");
         command.Parameters.AddWithValue("@id", id);
+        command.Parameters.AddWithValue("username", username);
         command.ExecuteNonQuery();  
         database.CloseConnection();
     }

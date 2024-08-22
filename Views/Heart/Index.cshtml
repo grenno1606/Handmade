@@ -24,7 +24,7 @@
           <div class="box heart-box">
             <span class="discount">-@product.DiscountPercentage%</span>
             <div class="image">
-              <img src="@product.Image" alt="image" />
+              <img src="~/uploads/@product.Image" alt="image" />
               <div class="box-buttons">
                 <a class="box-button" href="@Href($"/Heart/DeleteProduct/{product.ProductId}")"><i
                     class="fas fa-heart"></i></a>
@@ -58,7 +58,7 @@
         <div class="box">
           <span class="discount">-@product.DiscountPercentage%</span>
           <div class="image">
-            <img src="@product.Image" alt="image" />
+            <img src="~/uploads/@product.Image" alt="image" />
             <div class="icons">
               <a href="@Href($"/Heart/AddProduct/{product.ProductId}")" class="fas fa-heart"></a>
               <button onclick="addProductToCart('@product.ProductId')" class="cart-btn">Thêm vào giỏ</button>
@@ -98,7 +98,7 @@
         foreach (var tutorial in ViewBag.favoriteTutorials)
         {
           <div class="box">
-            <video class="box-video" controls src="@tutorial.Video" muted></video>
+            <video class="box-video" controls src="~/uploads_video/@tutorial.Video" muted></video>
 
             <div class="content">
               <h3 style="font-size: 1.8rem">@tutorial.TutorialName</h3>

@@ -13,21 +13,21 @@
       @{
         if (ViewBag.cartProducts != null)
         {
-          var i = 0;
+          int i = 0;
           foreach (var product in ViewBag.cartProducts)
           {
             <li class="left__item">
               <div class="item__image">
-                <img src="@product.Image" alt="image" />
+                <img src="~/uploads/@product.Image" alt="image" />
               </div>
               <div class="item__detail">
                 <p class="item__name">@product.ProductName</p>
                 <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new
-            System.Globalization.CultureInfo("vi-VN")).Replace(",", ".")
-                </p>
-                <p style="color: var(--green);  font-weight: bold; margin-left: 10px;">x @userCartModels[i++].Quantity</p>
+            System.Globalization.CultureInfo("vi-VN"))</p>
+                <p style="color: var(--green);font-weight: bold;">x @userCartModels[i].Quantity</p>
               </div>
             </li>
+            i++;
           }
         }
       }
