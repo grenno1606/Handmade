@@ -1,5 +1,6 @@
 ﻿@{
   ViewData["Title"] = "Checkout Page";
+  var userCartModels = ViewBag.userCartModels as List<UserCartModel>;
 }
 
 <main class="checkout-container">
@@ -12,6 +13,7 @@
       @{
         if (ViewBag.cartProducts != null)
         {
+          var i = 0;
           foreach (var product in ViewBag.cartProducts)
           {
             <li class="left__item">
@@ -21,8 +23,9 @@
               <div class="item__detail">
                 <p class="item__name">@product.ProductName</p>
                 <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new
-            System.Globalization.CultureInfo("vi-VN"))</p>
-                <p>x @product.Amount</p>
+            System.Globalization.CultureInfo("vi-VN")).Replace(",", ".")
+                </p>
+                <p style="color: var(--green);  font-weight: bold; margin-left: 10px;">x @userCartModels[i++].Quantity</p>
               </div>
             </li>
           }

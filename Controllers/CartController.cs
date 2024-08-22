@@ -20,7 +20,7 @@ public class CartController : Controller
 
     public IActionResult AddProduct(String id)
     {
-        UserCartModel userCartModel= new UserCartModel("Dunn",id);
+        UserCartModel userCartModel= new UserCartModel("Dunn",id,1);
         userCartService.Add(userCartModel);
         return Redirect(Request.Headers.Referer.ToString());
     }
