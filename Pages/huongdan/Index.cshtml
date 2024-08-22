@@ -1,0 +1,49 @@
+﻿@page
+@model Handmade_Dotnet.Pages.huongdan.IndexModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Liệt kê  sản phẩm</p>
+    <a class="btn btn-primary" asp-page="/huongdan/them">THÊM SẢN PHẨM</a>
+    <div class="table_container">
+        <table class="table datatable">
+            <thead>
+                <tr>
+                    <th>TT</th>
+                    <th>Tên hướng dẫn</th>
+                    <th>Video</th>
+                    <th>Ngày tạo</th>
+                    <th>Ngày cập nhật</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.huongdan)
+                {
+                    <tr>
+                        <td>@item.tutorialid</td>
+                        <td>@item.tutorialname</td>
+                      <td
+                          >
+                            <video width="640" height="360" src="~/uploads_video/@item.video" loop autoplay muted></video>
+                      </td>
+                      @*  <td><img src="~/uploads/@item.video" width="150px"></td> *@
+                        <td>@item.created_at</td>
+                        <td>@item.updated_at</td>
+                                             <td>
+                            <a class="btn btn-danger rounded-pill" asp-page="../huongdan/sua" asp-route-tutorialid="@item.tutorialid">Sửa</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger rounded-pill" asp-page="../huongdan/xoa" asp-route-tutorialid="@item.tutorialid">Xoa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+
+
+        </table>
+    </div>
+</main>

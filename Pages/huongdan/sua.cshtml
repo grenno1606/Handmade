@@ -1,0 +1,67 @@
+﻿   @page
+@model Handmade_Dotnet.Pages.huongdan.suaModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Sưa sản phẩm</p>
+    <table>
+        <form method="POST" action="" enctype="multipart/form-data">
+        <tr>
+            <td>Tên sản phẩm</td>
+            <td>
+
+                <span asp-validation-for="huongdan.tutorialname" class="text-danger"></span>
+                <input asp-for="huongdan.tutorialname" type="text">
+            </td>
+
+        </tr>
+        
+            @*   <tr>
+        <td>Phần trăm giảm giá</td>
+        <td>
+        <span asp-validation-for="sanphams.discount_percentage" class="text-danger"></span>
+        <input asp-for="sanphams.discount_percentage" type="text" />
+        </tr> *@
+        <tr>
+            <td>Video</td>
+            <td>
+                <input type="file" name="videoFile" class="form-control" />
+                <span asp-validation-for="huongdan.video" class="text-danger"></span>
+            </td>
+
+
+            <td>
+                <video width="640" height="360" src="~/uploads_video/@Model.huongdan.video" loop autoplay muted></video>
+            </td>
+           
+
+        </tr>
+        
+        <tr>
+
+            <td>
+
+                <span asp-validation-for="huongdan.tutorialid" class="text-danger"></span>
+                <input asp-for="huongdan.tutorialid" type="hidden">
+            </td>
+        </tr>
+
+
+        <td>
+
+            <span asp-validation-for="huongdan.created_at" class="text-danger"></span>
+            <input asp-for="huongdan.created_at " type="hidden">
+        </td>
+        </tr>
+
+
+
+
+
+        <tr>
+            <td colspan="2"><input class="btn btn-primary" type="submit" name="themsanpham" value="Sửa sản phẩm"></td>
+        </tr>
+        </form>
+    </table>
+</main>
