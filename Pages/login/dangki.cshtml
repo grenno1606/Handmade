@@ -1,0 +1,96 @@
+﻿@page
+@model handmade.Pages.login.dangkiModel
+@{
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handmade website</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/Style.css" />
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="./HomeView.html#" class="logo">Handmade<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="./HomeView.html#home">Trang Chủ</a>
+            <a href="./HomeView.html#about">Giới Thiệu</a>
+            <a href="./HomeView.html#products">Sản Phẩm</a>
+            <a href="./HomeView.html#tutorial">Hướng Dẫn</a>
+            <a href="./HomeView.html#review">Đánh Giá</a>
+            <a href="./HomeView.html#contact">Liên Hệ</a>
+        </nav>
+        <a href="#" class="help"><span>Bạn cần giúp đỡ?</span></a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="signup">
+            <form method="post" >
+                <h3>Đăng ký</h3>
+                <input asp-for="user1.username"  type="text" placeholder="Họ và tên" /><br />
+                <input asp-for="user1.email" type="text"
+                       placeholder="Email/Số điện thoại/Tên đăng nhập" /><br />
+                <input input asp-for="user1.password" type="password" placeholder="Mật khẩu mới" /><br />
+                <input type="password" placeholder="Nhập lại mật khẩu" /><br />
+                <span>Bằng việc đăng kí, bạn đã đồng ý với Handmade về </span><strong>Điều khoản dịch vụ & Chính sách bảo mật</strong><br />
+                <button type="submit" id="box">Đăng ký</button><br />
+                <a href="/dangnhap">
+                    <span>Bạn đã có tài khoản? </span><strong><u>Đăng nhập</u></strong>
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Mục Lục</h3>
+                <a href="./HomeView.html#">Trang Chủ</a>
+                <a href="./HomeView.html#about">Giới Thiệu</a>
+                <a href="./HomeView.html#products">Sản Phẩm</a>
+                <a href="./HomeView.html#tutorial">Hướng Dẫn</a>
+                <a href="./HomeView.html#review">Đánh Giá</a>
+                <a href="./HomeView.html#contact">Liên Hệ</a>
+            </div>
+
+            <div class="box">
+                <h3>Tài Khoản</h3>
+                <a href="./HeartView.html">Mục Yêu Thích</a>
+                <a href="./CartView.html">Đơn Hàng Của Tôi</a>
+                <a href="./LoginView.html">Tài Khoản Của Tôi</a>
+            </div>
+
+            <div class="box">
+                <h3>Hỗ Trợ</h3>
+                <a href="#">Mua Hàng</a>
+                <a href="#">Bán Hàng</a>
+                <a href="#">Thanh Toán</a>
+                <a href="#">Trả Hàng & Hoàn Tiền</a>
+                <a href="#">Chăm Sóc Khách Hàng</a>
+            </div>
+
+            <div class="box">
+                <h3>Thông Tin Liên Hệ</h3>
+                <a href="#">0123 456 789</a>
+                <a href="#">Handmade@gmail.com</a>
+                <a href="#">116-Ngũ Hành Sơn, Đà Nẵng</a>
+                <img src="./Uploads/tt.jpg" alt="image" />
+            </div>
+        </div>
+
+        <div class="credit">
+            &copy;2024 <span>Handmade</span> | Tất Cả Các Quyền Được Bảo Lưu.
+        </div>
+    </section>
+
+</body>
+</html>

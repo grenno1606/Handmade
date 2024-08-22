@@ -1,0 +1,40 @@
+﻿@page
+@model handmade.Pages.login.dangnhapModel
+@{
+}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/Style.css" />
+
+
+
+</head>
+<section class="home" id="home">
+    <div class="login">
+        <form action="" method="post">
+            <h3>Đăng nhập</h3>
+            <input asp-for="user.email" type="text"
+                   placeholder="Email/Số điện thoại/Tên đăng nhập" /><br />
+            <input asp-for="user.password" type="password" placeholder="Mật khẩu" /><br />
+            <button id="box" type="submit">Đăng nhập</button><br />
+
+@*             <td colspan="2"><input class="btn btn-primary" type="submit" name="themsanpham" value="Thêm sản phẩm"></td>
+ *@            <a href="#"><strong>Quên mật khẩu?</strong></a><br />
+            <span>hoặc sử dụng tài khoản của bạn</span><br />
+            <div class="icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-google-plus-g"></a>
+                <a href="#" class="fab fa-linkedin-in"></a>
+            </div>
+            <br />
+            <a href="/login/dangki">
+                >
+                <span>Bạn mới biết đến Handmade? </span><strong><u>Đăng kí</u></strong>
+            </a>
+        </form>
+    </div>
+</section>

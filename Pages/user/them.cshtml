@@ -1,0 +1,78 @@
+﻿@page
+@model handmade.Pages.user.themModel
+@{
+}
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Thêm người dùng>
+    <table>
+        <form method="POST" action="" enctype="multipart/form-data">
+        <tr>
+            <td>Tên người dùng</td>
+            <td>
+
+                <span asp-validation-for="user.username" class="text-danger"></span>
+                <input asp-for="user.username" type="text">
+            </td>
+
+        </tr>
+        <tr>
+            <td>mật khẩu</td>
+            <td>
+
+                <span asp-validation-for="user.password" class="text-danger"></span>
+                <input asp-for="user.password" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>email </td>
+            <td>
+
+                <span asp-validation-for="user.email" class="text-danger"></span>
+                <input asp-for="user.email" type="text">
+            </td>
+        </tr>
+            @*   <tr>
+        <td>Phần trăm giảm giá</td>
+        <td>
+        <span asp-validation-for="sanphams.discount_percentage" class="text-danger"></span>
+        <input asp-for="sanphams.discount_percentage" type="text" />
+        </tr> *@
+        <tr>
+            <td>Quyền</td>
+            <td>
+                <span asp-validation-for="user.role" class="text-danger"></span>
+                <select asp-for="user.role" class="form-control">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+
+                <span asp-validation-for="user.userid" class="text-danger"></span>
+                <input asp-for="user.userid " type="hidden">
+            </td>
+
+            <td>
+
+                <span asp-validation-for="user.created_at" class="text-danger"></span>
+                <input asp-for="user.created_at " type="hidden">
+            </td>
+        </tr>
+
+
+
+
+
+        <tr>
+            <td colspan="2"><input class="btn btn-primary" type="submit" name="themsanpham" value="Thêm người đùng"></td>
+        </tr>
+        </form>
+    </table>
+</main>

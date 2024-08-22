@@ -1,0 +1,52 @@
+﻿@page
+@model handmade.Pages.sanpham.themModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Thêm sản phẩm</p>
+    <form method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Tên sản phẩm</td>
+                <td>
+                    <input asp-for="sanphams.productname" type="text" class="form-control" />
+                    <span asp-validation-for="sanphams.productname" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Giá Gốc</td>
+                <td>
+                    <input asp-for="sanphams.original_price" type="text" class="form-control" />
+                    <span asp-validation-for="sanphams.original_price" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Giá giảm</td>
+                <td>
+                    <input asp-for="sanphams.discounted_price" type="text" class="form-control" />
+                    <span asp-validation-for="sanphams.discounted_price" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Hình ảnh</td>
+                <td>
+                    <input type="file" name="imageFile" class="form-control" />
+                    <span asp-validation-for="sanphams.image" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Số Lượng</td>
+                <td>
+                    <input asp-for="sanphams.amount" type="text" class="form-control" />
+                    <span asp-validation-for="sanphams.amount" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="btn btn-primary" type="submit" value="Thêm sản phẩm" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>

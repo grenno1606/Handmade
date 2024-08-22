@@ -1,0 +1,51 @@
+﻿@page
+@model handmade.Pages.user.IndexModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Liệt kê  sản phẩm</p>
+    <a class="btn btn-primary" href="/user/them">THÊM NGƯỜI DÙNG</a>
+    <div class="table_container">
+        <table class="table datatable">
+            <thead>
+                <tr>
+                    <th>TT</th>
+                    <th>Tên người dùng</th>
+                    <th>Mật khẩu</th>
+                    <th>email</th>
+                    <th>Quyền</th>
+                    <th>Ngày tạo</th>
+                    <th>Ngày cập nhật</th>
+                  
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.users)
+                {
+                    <tr>
+                        <td>@item.userid</td>
+                        <td>@item.username</td>
+                        <td>@item.password </td>
+                        <td>@item.email </td>
+                        <td>@item.role</td>
+                        <td>@item.created_at</td>
+                        <td>@item.updated_at</td>
+                        
+                        <td>
+                            <a class="btn btn-danger rounded-pill" asp-page="../user/sua" asp-route-userid="@item.userid">Sửa</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger rounded-pill" asp-page="../user/xoa" asp-route-userid="@item.userid">Xoa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+
+
+        </table>
+    </div>
+</main>
