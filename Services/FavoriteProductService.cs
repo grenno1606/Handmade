@@ -33,14 +33,31 @@ public class FavoriteProductsService
         return products;
     }
 
+     public FavoriteProductModel? GetById(String id)
+    {
+        Database database = new Database();
+        var command = database.CreateCommand("SELECT * FROM favoriteproducts WHERE productid = @id");
+        command.Parameters.AddWithValue("@id", id);
+        var reader = command.ExecuteReader();
+        if (reader.Read())
+        {
+            return FavoriteProductModel.FromDatabase(reader);
+        }
+        database.CloseConnection();
+        return null;
+    }
     public void Add(FavoriteProductModel favoriteProduct)
     {
+        FavoriteProductModel? p = GetById(favoriteProduct.ProductId);
+        if (p != null) {}
+        else{
         Database database = new Database();
         var command = database.CreateCommand("INSERT INTO favoriteproducts(username, productid) VALUES (@username, @productId)");
         command.Parameters.AddWithValue("@username", favoriteProduct.Username);
         command.Parameters.AddWithValue("@productId", favoriteProduct.ProductId);
         command.ExecuteNonQuery();
         database.CloseConnection();
+        }
     }
 
     public void Delete(String id)

@@ -32,16 +32,18 @@ public class UserCartService
         return products;
     }
 
-    public void SetAmount(int Amount){
+    public void SetQuantity(int Quantity,String ProductId){
         Database database = new Database();
-        var command = database.CreateCommand("UPDATE products p JOIN userCart uc ON p.productId = uc.productId SET p.amount = uc.quantity");
+        var command = database.CreateCommand("UPDATE userCart SET quantity = @quantity WHERE productId= @productId");
+        command.Parameters.AddWithValue("@quantity", Quantity);
+        command.Parameters.AddWithValue("@productId",ProductId);
         command.ExecuteNonQuery();
         database.CloseConnection();
     }
-    public UserCartModel? GetById(int id)
+    public UserCartModel? GetById(String id)
     {
         Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM usercart WHERE cartid = @id");
+        var command = database.CreateCommand("SELECT * FROM usercart WHERE productid = @id");
         command.Parameters.AddWithValue("@id", id);
         var reader = command.ExecuteReader();
         if (reader.Read())
@@ -55,11 +57,15 @@ public class UserCartService
     public void Add(UserCartModel userCart)
     {
         Database database = new Database();
+        UserCartModel? p=GetById(userCart.ProductId);
+        if (p != null) {userCart.Quantity+=1; Update(userCart);}
+        else{
         var command = database.CreateCommand("INSERT INTO usercart(username, productid) VALUES (@userName, @productId)");
         command.Parameters.AddWithValue("@userName", userCart.Username);
         command.Parameters.AddWithValue("@productId", userCart.ProductId);
         command.ExecuteNonQuery();
         database.CloseConnection();
+        }
     }
 
     public void Update(UserCartModel userCart)

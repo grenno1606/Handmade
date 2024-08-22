@@ -1,73 +1,123 @@
 ﻿@{
-    ViewData["Title"] = "Checkout Page";
+  ViewData["Title"] = "Checkout Page";
 }
 
- <main class="checkout-container">
-      <div class="box box-left">
-        <h3>Đơn hàng</h3>
-        <div class="line"><hr /></div>
-        <ul class="left__list">
-          @{
-            if (ViewBag.cartProducts!=null){
-            foreach (var product in ViewBag.cartProducts){
-              <li class="left__item">
-                <div class="item__image">
-                  <img src="@product.Image" alt="image" />
-                </div>
-                <div class="item__detail">
-                  <p class="item__name">@product.ProductName</p>
-                  <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</p>
-                  <p>x @product.Amount</p>
-                </div>
-              </li>
-            }
-            }
+<main class="checkout-container">
+  <div class="box box-left">
+    <h3>Đơn hàng</h3>
+    <div class="line">
+      <hr />
+    </div>
+    <ul class="left__list">
+      @{
+        if (ViewBag.cartProducts != null)
+        {
+          foreach (var product in ViewBag.cartProducts)
+          {
+            <li class="left__item">
+              <div class="item__image">
+                <img src="@product.Image" alt="image" />
+              </div>
+              <div class="item__detail">
+                <p class="item__name">@product.ProductName</p>
+                <p class="item__price">&#8363;@product.DiscountedPrice.ToString("#,##0", new
+            System.Globalization.CultureInfo("vi-VN"))</p>
+                <p>x @product.Amount</p>
+              </div>
+            </li>
           }
-        </ul>
-        <div class="left__header">
-          <div class="line"><hr /></div>
-          <div class="left__total">
-            <span>Tạm tính</span>
-            @{int total=0;
-              foreach (var product in ViewBag.cartProducts){
-                total+=product.DiscountedPrice * product.Amount;
-                }
-            }
-            <span class="left__price">&#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
-          </div>
-          <div class="left__total">
-            <span>Phí vận chuyển</span>
-            <span class="left__price">&#8363;30.000</span>
-          </div>
-          <div class="line"><hr /></div>
-          <div class="left__total">
-            <span>Tổng thanh toán</span>
-            <span class="left__total-price">&#8363;@((total+30000).ToString("#,##0", new System.Globalization.CultureInfo("vi-VN")))</span>
-          </div>
-        </div>
+        }
+      }
+    </ul>
+    <div class="left__header">
+      <div class="line">
+        <hr />
       </div>
-      <div class="box box-right">
-        <form asp-area="" asp-controller="OrderSuccess" asp-action="Index">
-          <h3>Thông tin mua hàng</h3>
-          <div class="form__item">
-            <label for="">Email</label>
-            <input type="text" />
-          </div>
-          <div class="form__item">
-            <label for="">Họ và tên</label>
-            <input type="text" />
-          </div>
-          <div class="form__item">
-            <label for="">Số điện thoại</label>
-            <input type="text" />
-          </div>
-          <div class="form__item">
-            <label for="">Địa chỉ</label>
-            <input type="text" />
-          </div>
-          <button type="submit" class="form__submit pay-btn">Đặt hàng</button>
-        </form>
+      <div class="left__total">
+        <span>Tạm tính</span>
+        @{
+          int total = 0;
+          foreach (var product in ViewBag.cartProducts)
+          {
+            total += product.DiscountedPrice * product.Amount;
+          }
+        }
+        <span class="left__price">&#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
       </div>
-    </main>
+      <div class="left__total">
+        <span>Phí vận chuyển</span>
+        <span class="left__price">&#8363;30.000</span>
+      </div>
+      <div class="line">
+        <hr />
+      </div>
+      <div class="left__total">
+        <span>Tổng thanh toán</span>
+        <span class="left__total-price">&#8363;@((total + 30000).ToString("#,##0", new
+          System.Globalization.CultureInfo("vi-VN")))</span>
+      </div>
+    </div>
+  </div>
+  <div class="box box-right">
+    <form asp-area="" asp-controller="OrderSuccess" asp-action="Index">
+      <h3>Thông tin mua hàng</h3>
+      <div class="form__item">
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="form__item">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="form__item">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" required pattern="^[0-9]{10,11}$" />
+      </div>
+      <div class="form__item">
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" required />
+      </div>
+      <button type="submit" class="form__submit pay-btn" id="submitBtn" disabled>Đặt hàng</button>
+    </form>
+  </div>
+</main>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const inputs = document.querySelectorAll('form input');
+    const submitBtn = document.getElementById('submitBtn');
 
-    
+    // Hàm kiểm tra tính hợp lệ của toàn bộ form
+    function validateForm() {
+      const form = document.querySelector('form');
+      submitBtn.disabled = !form.checkValidity();
+    }
+
+    // Kiểm tra từng trường input khi người dùng unfocus (blur)
+    inputs.forEach(input => {
+      input.addEventListener('blur', function () {
+        if (!input.checkValidity()) {
+          input.classList.add('invalid');
+        } else {
+          input.classList.remove('invalid');
+        }
+        validateForm(); // Kiểm tra toàn bộ form sau khi unfocus
+      });
+    });
+
+    // Kiểm tra lại toàn bộ form khi người dùng cố gắng submit
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault(); // Ngăn chặn hành động submit nếu form không hợp lệ
+      }
+    });
+  });
+</script>
+<style>
+  input.invalid {
+    border-color: red;
+  }
+
+  input.valid {
+    border-color: green;
+  }
+</style>

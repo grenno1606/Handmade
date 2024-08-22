@@ -31,6 +31,13 @@ public class CartController : Controller
         return Redirect(Request.Headers.Referer.ToString());
     }
 
+    public IActionResult UpdateQuantity(int id,string productId)
+    {
+        Console.WriteLine($"Received quantity: {id}, productId: {productId}");
+        userCartService.SetQuantity(id,productId);
+        return Redirect(Request.Headers.Referer.ToString());
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

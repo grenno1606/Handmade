@@ -40,10 +40,10 @@
           </div>
           <div class="num">
             <button class="dec">-</button>
-            <input class="cen" type="text" value="@product.Amount" />
+            <input class="cen" type="text" value="1" productId="@product.ProductId" />
             <button class="in">+</button>
           </div>
-          <div class="mon">&#8363;@((product.DiscountedPrice * product.Amount).ToString("#,##0", new
+          <div class="mon">&#8363;@((product.DiscountedPrice).ToString("#,##0.000", new
       System.Globalization.CultureInfo("vi-VN")))</div>
           <div class="ope">
             <form action="@Href($"/Cart/DeleteProduct/{product.ProductId}")">
@@ -53,7 +53,7 @@
       Tìm sản phẩm tương tự <i class="fa-solid fa-caret-down"></i> *@
           </div>
         </div>
-        total += product.DiscountedPrice * product.Amount;
+        total += product.DiscountedPrice;
       }
     }
   }
@@ -133,7 +133,9 @@
 
   function updateTotalPrice(productElement) {
     var quantity = parseInt(productElement.querySelector('.cen').value, 10);
-
+    var quantityInput = productElement.querySelector('.cen');
+    var productId = quantityInput.getAttribute('productId');
+    fetch(`/Cart/UpdateQuantity/${quantity}?productId=${productId}`);
     var discountedPriceText = productElement.querySelector('.pri').childNodes[2].textContent.trim();
     var discountedPrice = parseFloat(discountedPriceText.replace(/[^0-9.-]+/g, ""));
 
