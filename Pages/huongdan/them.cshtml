@@ -1,0 +1,34 @@
+﻿@page
+@model Handmade_Dotnet.Pages.huongdan.themModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Thêm sản phẩm</p>
+    <form method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Tên Video</td>
+                <td>
+                    <input asp-for="huongdan.tutorialname" type="text" class="form-control" />
+                    <span asp-validation-for="huongdan.tutorialname" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Hình ảnh</td>
+                <td>
+                    <input type="file" name="videoFile" class="form-control" />
+                    <span asp-validation-for="huongdan.video" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                
+            <tr>
+                <td colspan="2">
+                    <input class="btn btn-primary" type="submit" value="Thêm sản phẩm" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>
+

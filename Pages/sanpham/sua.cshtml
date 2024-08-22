@@ -1,0 +1,88 @@
+﻿@page
+@model handmade.Pages.sanpham.suaModel
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <p>Sưa sản phẩm</p>
+    <table>
+        <form method="POST" action="" enctype="multipart/form-data">
+        <tr>
+            <td>Tên sản phẩm</td>
+            <td>
+
+                <span asp-validation-for="sanphams.productname" class="text-danger"></span>
+                <input asp-for="sanphams.productname" type="text">
+            </td>
+
+        </tr>
+        <tr>
+            <td>Giá Gốc</td>
+            <td>
+
+                <span asp-validation-for="sanphams.original_price" class="text-danger"></span>
+                <input asp-for="sanphams.original_price" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Giá giảm </td>
+            <td>
+
+                <span asp-validation-for="sanphams.discounted_price" class="text-danger"></span>
+                <input asp-for="sanphams.discounted_price" type="text">
+            </td>
+        </tr>
+            @*   <tr>
+        <td>Phần trăm giảm giá</td>
+        <td>
+        <span asp-validation-for="sanphams.discount_percentage" class="text-danger"></span>
+        <input asp-for="sanphams.discount_percentage" type="text" />
+        </tr> *@
+        <tr>
+            <td>Hình ảnh</td>
+            <td>
+                <input type="file" name="imageFile" class="form-control" />
+                <span asp-validation-for="sanphams.image" class="text-danger"></span>
+            </td>
+
+
+
+            <img src="~/uploads/@Model.sanphams.image" width="150px" />
+
+        </tr>
+        <tr>
+            <td>Số Lượng</td>
+
+            <td>
+
+                <span asp-validation-for="sanphams.amount" class="text-danger"></span>
+                <input asp-for="sanphams.amount" type="text">
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+
+                <span asp-validation-for="sanphams.productid" class="text-danger"></span>
+                <input asp-for="sanphams.productid" type="hidden">
+            </td>
+        </tr>
+   
+
+        <td>
+
+            <span asp-validation-for="sanphams.created_at" class="text-danger"></span>
+            <input asp-for="sanphams.created_at " type="hidden">
+        </td>
+        </tr>
+
+
+
+
+
+        <tr>
+            <td colspan="2"><input class="btn btn-primary" type="submit" name="themsanpham" value="Sửa sản phẩm"></td>
+        </tr>
+        </form>
+    </table>
+</main>
