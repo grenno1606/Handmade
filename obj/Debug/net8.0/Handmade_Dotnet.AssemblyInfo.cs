@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Handmade_Dotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcbe091f6a16bd8b2fd156245b02f93d10a9284e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c24db57b9615c7d6d3649f747bd6eeac14a13d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Handmade_Dotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Handmade_Dotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
