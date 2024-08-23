@@ -18,6 +18,12 @@ public class CheckoutController : Controller
             }
         List<ProductModel> cartProducts = userCartService.GetByUsername(username); //---------------------------
         ViewBag.cartProducts = cartProducts;
+        List<UserCartModel> userCartModels = userCartService.GetAll();
+        ViewBag.userCartModels = userCartModels;
+         foreach (var item in userCartModels)
+        {
+            Console.WriteLine($"UserId: {item.Username}, ProductId: {item.ProductId}, Quantity: {item.Quantity}");
+        }
         return View();
     }
 

@@ -32,17 +32,20 @@ public class UserCartService
         return products;
     }
 
-    public void SetAmount(int Amount){
+    public void SetQuantity(int Quantity,String ProductId){
         Database database = new Database();
-        var command = database.CreateCommand("UPDATE products p JOIN userCart uc ON p.productId = uc.productId SET p.amount = uc.quantity");
+        var command = database.CreateCommand("UPDATE userCart SET quantity = @quantity WHERE productId= @productId");
+        command.Parameters.AddWithValue("@quantity", Quantity);
+        command.Parameters.AddWithValue("@productId",ProductId);
         command.ExecuteNonQuery();
         database.CloseConnection();
     }
-    public UserCartModel? GetById(int id)
+    public UserCartModel? GetById(String id,String username)
     {
         Database database = new Database();
-        var command = database.CreateCommand("SELECT * FROM usercart WHERE cartid = @id");
+        var command = database.CreateCommand("SELECT * FROM usercart WHERE productid = @id AND username = @username");
         command.Parameters.AddWithValue("@id", id);
+        command.Parameters.AddWithValue("@username",username);
         var reader = command.ExecuteReader();
         if (reader.Read())
         {
@@ -55,11 +58,15 @@ public class UserCartService
     public void Add(UserCartModel userCart)
     {
         Database database = new Database();
+        // UserCartModel? p=GetById(userCart.ProductId,userCart.Username);
+        // if (p != null) {userCart.Quantity+=1; Update(userCart);}
+        // else{
         var command = database.CreateCommand("INSERT INTO usercart(username, productid) VALUES (@userName, @productId)");
         command.Parameters.AddWithValue("@userName", userCart.Username);
         command.Parameters.AddWithValue("@productId", userCart.ProductId);
         command.ExecuteNonQuery();
         database.CloseConnection();
+        // }
     }
 
     public void Update(UserCartModel userCart)
@@ -68,6 +75,7 @@ public class UserCartService
         var command = database.CreateCommand("UPDATE usercart SET quantity = @quantity WHERE productid = @productId");
         command.Parameters.AddWithValue("@quantity", userCart.Quantity);
         command.Parameters.AddWithValue("@productId", userCart.ProductId);
+        // command.Parameters.AddWithValue("@username",userCart.Username);
         command.ExecuteNonQuery();
         database.CloseConnection();
     }

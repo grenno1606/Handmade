@@ -29,8 +29,13 @@ public class CartController : Controller
             {
                 return RedirectToAction("Index", "Login");
             }
-        UserCartModel userCartModel= new UserCartModel(username,id);
+        // var product=userCartService.GetByUsername(username);
+        var p=userCartService.GetById(id,username);
+        if (p != null) {p.Quantity+=1; userCartService.Update(p);}
+        else{
+        UserCartModel userCartModel= new UserCartModel(username,id,1);
         userCartService.Add(userCartModel);
+        }
         return Redirect(Request.Headers.Referer.ToString());
     }
 
@@ -42,6 +47,13 @@ public class CartController : Controller
                 return RedirectToAction("Index", "Login");
             }
         userCartService.Delete(id,username);
+        return Redirect(Request.Headers.Referer.ToString());
+    }
+
+    public IActionResult UpdateQuantity(int id,string productId)
+    {
+        Console.WriteLine($"Received quantity: {id}, productId: {productId}");
+        userCartService.SetQuantity(id,productId);
         return Redirect(Request.Headers.Referer.ToString());
     }
 

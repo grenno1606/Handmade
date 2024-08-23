@@ -61,7 +61,7 @@
             <img src="~/uploads/@product.Image" alt="image" />
             <div class="icons">
               <a href="@Href($"/Heart/AddProduct/{product.ProductId}")" class="fas fa-heart"></a>
-              <a onclick="addProductToCart('@product.ProductId')" class="cart-btn">Thêm vào giỏ</a>
+              <button onclick="addProductToCart('@product.ProductId')" class="cart-btn">Thêm vào giỏ</button>
               <button href="#" class="fas fa-share"></button>
             </div>
           </div>

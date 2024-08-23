@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handmade_Dotnet", "Handmade_Dotnet.csproj", "{B83BAFC6-E01C-46EB-88BA-3CA0166FBD32}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handmade_Dotnet", "Handmade_Dotnet.csproj", "{7D801D65-A5A8-4187-A779-3829A307156A}"
+>>>>>>> main
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -31,14 +31,32 @@ public class FavoriteTutorialsService
         return tutorials;
     }
 
+    public FavoriteTutorialModel? GetById(String id)
+    {
+        Database database = new Database();
+        var command = database.CreateCommand("SELECT * FROM favoritetutorials WHERE tutorialid = @id");
+        command.Parameters.AddWithValue("@id", id);
+        var reader = command.ExecuteReader();
+        if (reader.Read())
+        {
+            return FavoriteTutorialModel.FromDatabase(reader);
+        }
+        database.CloseConnection();
+        return null;
+    }
+
     public void Add(FavoriteTutorialModel favoriteTutorial)
     {
+        FavoriteTutorialModel? t = GetById(favoriteTutorial.TutorialId);
+        if (t != null) {}
+        else{
         Database database = new Database();
         var command = database.CreateCommand("INSERT INTO favoritetutorials(username, tutorialid) VALUES (@username, @tutorialId)");
         command.Parameters.AddWithValue("@username", favoriteTutorial.Username);
         command.Parameters.AddWithValue("@tutorialId", favoriteTutorial.TutorialId);
         command.ExecuteNonQuery();
         database.CloseConnection();
+        }
     }
 
     public void Delete(String id)
