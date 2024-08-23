@@ -1781,6 +1781,18 @@
       "PackagePath": "staticwebassets\\Public\\vendor\\tinymce\\tinymce.min.js"
     },
     {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\11.png",
+      "PackagePath": "staticwebassets\\Uploads\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\Screenshot (50).png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot (50).png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\Screenshot (88).png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot (88).png"
+    },
+    {
       "Id": "C:\\Users\\duong\\Downloads\\Handmade\\wwwroot\\Uploads\\bg.png",
       "PackagePath": "staticwebassets\\Uploads\\bg.png"
     },

@@ -94,7 +94,7 @@
         <div class="box">
           <span class="discount">-@product.DiscountPercentage%</span>
           <div class="image">
-            <img src="@product.Image" alt="image" />
+            <img src="~/uploads/@product.Image" alt="image" />
             <div class="icons">
               <button class="cart-btn1" onclick="addProductToHeart('@product.ProductId')"><i
                   class="fas fa-heart"></i></button>
@@ -127,7 +127,7 @@
       {
         if (countt > 7) break;
         <div class="row">
-          <video controls src="@tutorial.Video" muted></video>
+          <video controls src="~/uploads_video/@tutorial.Video" muted></video>
           <div class="content">
             <h3>@tutorial.TutorialName</h3>
             <button onclick="addTutorialToHeart('@tutorial.TutorialId')" class="btt"><i

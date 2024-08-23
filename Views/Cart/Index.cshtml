@@ -32,7 +32,7 @@
       {
         <div class="tu1">
           <div class="cb"><input type="checkbox" /></div>
-          <div class="pr"><img src="@product.Image" alt="image" /></div>
+          <div class="pr"><img src="~/uploads/@product.Image" alt="image" /></div>
           <div class="na">@product.ProductName</div>
           <div class="pri">
             <span>&#8363;@product.OriginalPrice.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
@@ -84,7 +84,7 @@
         <div class="box">
           <span class="discount">-@product.DiscountPercentage%</span>
           <div class="image">
-            <img src="@product.Image" alt="image" />
+            <img src="~/uploads/@product.Image" alt="image" />
             <div class="iconss">
               <button onclick="addProductToHeart('@product.ProductId')" class="fas fa-heart"></button>
               <form action="@Href($"/Cart/AddProduct/{product.ProductId}")">

@@ -72,11 +72,12 @@ public class UserCartService
         database.CloseConnection();
     }
 
-    public void Delete(String id)
+    public void Delete(String id,String username)
     {
         Database database = new Database();
-        var command = database.CreateCommand("DELETE FROM usercart WHERE productid = @id");
+        var command = database.CreateCommand("DELETE FROM usercart WHERE productid = @id AND username = @username");
         command.Parameters.AddWithValue("@id", id);
+        command.Parameters.AddWithValue("@username",username);
         command.ExecuteNonQuery();
         database.CloseConnection();
     }

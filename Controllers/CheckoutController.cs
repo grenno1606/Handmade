@@ -11,7 +11,12 @@ public class CheckoutController : Controller
 
     public IActionResult Index()
     {
-        List<ProductModel> cartProducts = userCartService.GetByUsername("Dunn"); //---------------------------
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        List<ProductModel> cartProducts = userCartService.GetByUsername(username); //---------------------------
         ViewBag.cartProducts = cartProducts;
         return View();
     }

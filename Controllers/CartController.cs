@@ -10,24 +10,38 @@ public class CartController : Controller
     public UserCartService userCartService=new UserCartService();
     public IActionResult Index()
     {
-        List<ProductModel> cartProducts = userCartService.GetByUsername("Dunn"); //---------------------------
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        List<ProductModel> cartProducts = userCartService.GetByUsername(username); //---------------------------
         ViewBag.cartProducts = cartProducts;
         List<ProductModel> products = productService.GetAll();
         ViewBag.products = products;
-        // userCartService.SetAmount();-------------------------------------------------
         return View();
     }
 
     public IActionResult AddProduct(String id)
     {
-        UserCartModel userCartModel= new UserCartModel("Dunn",id);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        UserCartModel userCartModel= new UserCartModel(username,id);
         userCartService.Add(userCartModel);
         return Redirect(Request.Headers.Referer.ToString());
     }
 
     public IActionResult DeleteProduct(String id)
     {
-        userCartService.Delete(id);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        userCartService.Delete(id,username);
         return Redirect(Request.Headers.Referer.ToString());
     }
 

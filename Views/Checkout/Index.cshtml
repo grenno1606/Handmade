@@ -12,7 +12,7 @@
             foreach (var product in ViewBag.cartProducts){
               <li class="left__item">
                 <div class="item__image">
-                  <img src="@product.Image" alt="image" />
+                  <img src="~/uploads/@product.Image" alt="image" />
                 </div>
                 <div class="item__detail">
                   <p class="item__name">@product.ProductName</p>

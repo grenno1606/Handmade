@@ -12,11 +12,16 @@ public class HeartController : Controller
     public FavoriteTutorialsService favoriteTutorialsService= new FavoriteTutorialsService();
     public IActionResult Index()
     {
-        List<ProductModel> favoriteProducts=favoriteProductsService.GetByUsername("Dunn");//-----------------
+        var username = HttpContext.Session.GetString("ten_user");
+         if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        List<ProductModel> favoriteProducts=favoriteProductsService.GetByUsername(username);//-----------------
         ViewBag.favoriteProducts = favoriteProducts;
         List<ProductModel> products = productService.GetAll();
         ViewBag.products = products;
-        List<TutorialModel> favoriteTutorials=favoriteTutorialsService.GetByUsername("Dunn");
+        List<TutorialModel> favoriteTutorials=favoriteTutorialsService.GetByUsername(username);
         ViewBag.favoriteTutorials = favoriteTutorials;
         List<TutorialModel> tutorials = tutorialService.GetAll();
         ViewBag.tutorials = tutorials;
@@ -25,21 +30,36 @@ public class HeartController : Controller
 
     public IActionResult AddProduct(String id)
     {
-        FavoriteProductModel favoriteProductModel= new FavoriteProductModel("Dunn",id);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+        {
+            return RedirectToAction("Index", "Login");
+        }
+        FavoriteProductModel favoriteProductModel= new FavoriteProductModel(username,id);
         favoriteProductsService.Add(favoriteProductModel);
         return Redirect(Request.Headers.Referer.ToString());
     }
 
      public IActionResult AddTutorial(String id)
     {
-        FavoriteTutorialModel favoriteTutorial=new FavoriteTutorialModel("Dunn",id);
+        var username = HttpContext.Session.GetString("ten_user");
+         if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        FavoriteTutorialModel favoriteTutorial=new FavoriteTutorialModel(username,id);
         favoriteTutorialsService.Add(favoriteTutorial);
         return Redirect(Request.Headers.Referer.ToString());
     }
 
     public IActionResult DeleteProduct(String id)
     {
-        favoriteProductsService.Delete(id);
+        var username = HttpContext.Session.GetString("ten_user");
+        if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Index", "Login");
+            }
+        favoriteProductsService.Delete(id,username);
         return Redirect(Request.Headers.Referer.ToString());
     }
 

@@ -44,7 +44,7 @@ namespace Handmade_Dotnet.Pages.login
                     else if (user1.role == "user")
                     {
                         HttpContext.Session.SetString("user", "true");
-                        return LocalRedirect("/Index");
+                        return LocalRedirect("/Home/Index");
                     }
                     else
                     {
