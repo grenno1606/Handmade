@@ -12,6 +12,8 @@ public class ProductController : Controller
         List<ProductModel> products = productService.GetAll();
         products.Reverse();
         ViewBag.Products=products;
+        var username = HttpContext.Session.GetString("ten_user");
+        ViewBag.username=username;
         return View();
     }
 

@@ -30,7 +30,18 @@
       <i class="fas fa-search" id="search-icon"></i>
       <a class="fas fa-heart" asp-area="" asp-controller="Heart" asp-action="Index"></a>
       <a class="fas fa-shopping-cart" asp-area="" asp-controller="Cart" asp-action="Index"></a>
-      <a class="fas fa-user" asp-area="" asp-controller="Login" asp-action="Index"></a>
+      @{
+        var username = ViewBag.username;
+        if (string.IsNullOrEmpty(username))
+        {
+          <a class="fas fa-user" asp-area="" asp-controller="Logout" asp-action="Index"></a>
+        }
+        else
+        {
+          <a class="fa-solid fa-arrow-right-from-bracket" asp-area="" asp-controller="Login" asp-action="Index"></a>
+        }
+      }
+      @* <a class="fas fa-user" asp-area="" asp-controller="Login" asp-action="Index"></a> *@
     </div>
 
     <form action="" class="search-form">

@@ -25,6 +25,7 @@ public class HeartController : Controller
         ViewBag.favoriteTutorials = favoriteTutorials;
         List<TutorialModel> tutorials = tutorialService.GetAll();
         ViewBag.tutorials = tutorials;
+        ViewBag.username=username;
         return View();
     }
 

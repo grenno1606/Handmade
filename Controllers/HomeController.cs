@@ -17,6 +17,8 @@ public class HomeController : Controller
         tutorials.Reverse();
         ViewBag.Products=products;
         ViewBag.Tutorials=tutorials;
+        var username = HttpContext.Session.GetString("ten_user");
+        ViewBag.username=username;
         return View();
     }
 

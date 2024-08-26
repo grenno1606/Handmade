@@ -9,147 +9,147 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Handmade_Dotnet
 build_property.RootNamespace = Handmade_Dotnet
-build_property.ProjectDir = C:\Users\duong\Downloads\Handmade\
+build_property.ProjectDir = /media/touyen/New Volume/ThucTapThucTe/Handmade_Final/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\duong\Downloads\Handmade
+build_property.MSBuildProjectDirectory = /media/touyen/New Volume/ThucTapThucTe/Handmade_Final
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/huongdan/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaHVvbmdkYW5cSW5kZXguY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/huongdan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvaHVvbmdkYW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/huongdan/sua.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaHVvbmdkYW5cc3VhLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/huongdan/sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvaHVvbmdkYW4vc3VhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/huongdan/them.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaHVvbmdkYW5cdGhlbS5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/huongdan/them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvaHVvbmdkYW4vdGhlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/huongdan/xoa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaHVvbmdkYW5ceG9hLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/huongdan/xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvaHVvbmdkYW4veG9hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/login/dangki.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW5cZGFuZ2tpLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/login/dangki.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvbG9naW4vZGFuZ2tpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/login/dangnhap.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW5cZGFuZ25oYXAuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/login/dangnhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvbG9naW4vZGFuZ25oYXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/login/dangxuat.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW5cZGFuZ3h1YXQuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/login/dangxuat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvbG9naW4vZGFuZ3h1YXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW5cSW5kZXguY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvbG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/sanpham/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2FucGhhbVxJbmRleC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/sanpham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvc2FucGhhbS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/sanpham/sua.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2FucGhhbVxzdWEuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/sanpham/sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvc2FucGhhbS9zdWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/sanpham/them.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2FucGhhbVx0aGVtLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/sanpham/them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvc2FucGhhbS90aGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/sanpham/xoa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2FucGhhbVx4b2EuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/sanpham/xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvc2FucGhhbS94b2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/user/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlclxJbmRleC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/user/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/user/sua.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlclxzdWEuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/user/sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlci9zdWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/user/them.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlclx0aGVtLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/user/them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlci90aGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/user/xoa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlclx4b2EuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/user/xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlci94b2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Cart/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Checkout/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcSW5kZXguY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Checkout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlY2tvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Heart/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhcnRcSW5kZXguY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Heart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVhcnQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/OrderSuccess/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJTdWNjZXNzXEluZGV4LmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/OrderSuccess/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJTdWNjZXNzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Product/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/Tutorial/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JpYWxcSW5kZXguY3NodG1s
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/Tutorial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHV0b3JpYWwvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/duong/Downloads/Handmade/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-3mlkk4dq19
+[/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ogt7jpmwsh

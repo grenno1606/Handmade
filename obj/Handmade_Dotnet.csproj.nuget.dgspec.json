@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj": {}
+    "/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Handmade_Dotnet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj": {
+    "/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Handmade_Dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj",
+        "projectUniqueName": "/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Handmade_Dotnet.csproj",
         "projectName": "Handmade_Dotnet",
-        "projectPath": "C:\\Users\\duong\\Downloads\\Handmade\\Handmade_Dotnet.csproj",
-        "packagesPath": "C:\\Users\\duong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duong\\Downloads\\Handmade\\obj\\",
+        "projectPath": "/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/Handmade_Dotnet.csproj",
+        "packagesPath": "/home/touyen/.nuget/packages/",
+        "outputPath": "/media/touyen/New Volume/ThucTapThucTe/Handmade_Final/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\duong\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/touyen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,6 +12,8 @@ public class TutorialController : Controller
         List<TutorialModel> tutorials = tutorialService.GetAll();
         tutorials.Reverse();
         ViewBag.Tutorials=tutorials;
+        var username = HttpContext.Session.GetString("ten_user");
+        ViewBag.username=username;
         return View();
     }
 

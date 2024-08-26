@@ -24,6 +24,7 @@ public class CheckoutController : Controller
         {
             Console.WriteLine($"UserId: {item.Username}, ProductId: {item.ProductId}, Quantity: {item.Quantity}");
         }
+        ViewBag.username=username;
         return View();
     }
 

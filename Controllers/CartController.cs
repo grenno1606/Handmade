@@ -21,6 +21,7 @@ public class CartController : Controller
         ViewBag.cart = cart;
         List<ProductModel> products = productService.GetAll();
         ViewBag.products = products;
+        ViewBag.username=username;
         return View();
     }
 
