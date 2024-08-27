@@ -1,6 +1,6 @@
 using MySqlConnector;
 class Database{
-    public MySqlConnection connection= new MySqlConnection("Server=localhost;Port=3306;User ID=root;Database=handmade;Password=123123123");
+    public MySqlConnection connection= new MySqlConnection("Server=localhost;Port=3306;User ID=root;Database=handmade");
     public void OpenConnection()
     {
         connection.Open();
