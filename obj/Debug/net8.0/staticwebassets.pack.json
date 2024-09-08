@@ -1785,6 +1785,22 @@
       "PackagePath": "staticwebassets\\Uploads\\11.png"
     },
     {
+      "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\Uploads\\Screenshot (1).png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot (1).png"
+    },
+    {
+      "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\Uploads\\Screenshot (18).png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot (18).png"
+    },
+    {
+      "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\Uploads\\Screenshot (3).png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\Uploads\\Screenshot (48).png",
+      "PackagePath": "staticwebassets\\Uploads\\Screenshot (48).png"
+    },
+    {
       "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\Uploads\\Screenshot (50).png",
       "PackagePath": "staticwebassets\\Uploads\\Screenshot (50).png"
     },
@@ -2215,6 +2231,10 @@
     {
       "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\ThucTapThucTe\\Handmade_Final\\wwwroot\\uploads_video\\Screenshot (39).png",
+      "PackagePath": "staticwebassets\\uploads_video\\Screenshot (39).png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Handmade_Dotnet.Microsoft.AspNetCore.StaticWebAssets.props",

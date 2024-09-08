@@ -49,7 +49,6 @@ namespace Handmade_Dotnet.Pages.login
                     else
                     {
                         HttpContext.Session.Clear();
-
                     }
                 }
                 else

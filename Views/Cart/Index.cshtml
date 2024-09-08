@@ -125,14 +125,16 @@
       decButton.addEventListener('click', function () {
         var currentValue = parseInt(quantityInput.value, 10);
         if (currentValue > 1) {
-          quantityInput.value = currentValue - 1;
+          currentValue--;
+          quantityInput.value = currentValue;
           updateTotalPrice(productElement);
         }
       });
 
       inButton.addEventListener('click', function () {
         var currentValue = parseInt(quantityInput.value, 10);
-        quantityInput.value = currentValue + 1;
+        currentValue++;
+        quantityInput.value = currentValue;
         updateTotalPrice(productElement);
       });
     });
@@ -142,16 +144,30 @@
     var quantity = parseInt(productElement.querySelector('.cen').value, 10);
     var quantityInput = productElement.querySelector('.cen');
     var productId = quantityInput.getAttribute('productId');
-    fetch(`/Cart/UpdateQuantity/${quantity}?productId=${productId}`);
+
+    // Cập nhật số lượng sản phẩm thông qua fetch
+    fetch(`/Cart/UpdateQuantity/${quantity}?productId=${productId}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Cập nhật số lượng thất bại');
+        }
+        return response.json();
+      })
+      .catch(error => console.error('Error:', error));
+
+    // Lấy giá sau khi giảm
     var discountedPriceText = productElement.querySelector('.pri').childNodes[2].textContent.trim();
     var discountedPrice = parseFloat(discountedPriceText.replace(/[^0-9.-]+/g, ""));
 
-    var totalPrice = discountedPrice * quantity;
-
-    productElement.querySelector('.mon').innerHTML = `&#8363;${totalPrice.toLocaleString('de-DE', {
-      minimumFractionDigits: 3,
-      maximumFractionDigits: 3
-    }).replace(',', '.')}`;
+    // Kiểm tra giá trị hợp lệ và tính tổng số tiền
+    if (!isNaN(discountedPrice) && !isNaN(quantity)) {
+      var totalPrice = discountedPrice * quantity;
+      productElement.querySelector('.mon').innerHTML = `&#8363;${totalPrice.toLocaleString('de-DE', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      }).replace(',', '.')}`;
+    } else {
+      console.error('Invalid price or quantity');
+    }
   }
-  ------------------------------------------------------------------jjjhghfgft
 </script>

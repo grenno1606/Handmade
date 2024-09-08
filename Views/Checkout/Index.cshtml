@@ -40,9 +40,11 @@
         <span>Tạm tính</span>
         @{
           int total = 0;
+          int j = 0;
           foreach (var product in ViewBag.cartProducts)
           {
-            total += product.DiscountedPrice * product.Amount;
+            total += product.DiscountedPrice * userCartModels[j].Quantity;
+            j++;
           }
         }
         <span class="left__price">&#8363;@total.ToString("#,##0", new System.Globalization.CultureInfo("vi-VN"))</span>
