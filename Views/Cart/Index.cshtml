@@ -47,7 +47,7 @@
             <input class="cen" type="text" value="@cart[i].Quantity" productId="@product.ProductId" />
             <button class="in">+</button>
           </div>
-          <div class="mon">&#8363;@((product.DiscountedPrice).ToString("#,##0", new
+          <div class="mon">&#8363;@((product.DiscountedPrice * cart[i].Quantity).ToString("#,##0", new
       System.Globalization.CultureInfo("vi-VN")).Replace(",", "."))</div>
           <div class="ope">
             <form action="@Href($"/Cart/DeleteProduct/{product.ProductId}")">
